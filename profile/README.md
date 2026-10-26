@@ -33,14 +33,14 @@
 
 ## Visual Identity & App Icons
 
-Mishkaah embraces a calm, museum-grade aesthetic honoring the dignity of classical Islamic texts, paired with mobile icons engineered to avoid mask-clipping on modern operating systems (iOS 18+ HIG and Android 13–15+ Adaptive Icons):
+Mishkaah embraces a clean, minimal visual design honoring the dignity of classical Islamic texts, paired with mobile icons engineered to avoid mask-clipping on modern operating systems (iOS 18+ HIG and Android 13–15+ Adaptive Icons):
 
 <div align="center">
 
 | Calligraphic Mark | Mobile App Icon Suite |
 | :---: | :---: |
 | <img src="./assets/mishkaah-mark-dark.png" width="260" alt="Mishkaah Calligraphic Mark" /> | <img src="./assets/app-icon-showcase-grid.png" width="460" alt="Mobile App Icon Suite" /> |
-| **Mishkaah Sovereign Mark**<br/>Classical Arabic *Diwan Thuluth* calligraphy | **Mobile App Icons (iOS 18 & Android)**<br/>Dark, Light, and Tinted modes strictly confined within safe zones |
+| **Mishkaah Calligraphic Mark**<br/>Classical Arabic *Diwan Thuluth* calligraphy | **Mobile App Icons (iOS 18 & Android)**<br/>Dark, Light, and Tinted modes strictly confined within safe zones |
 
 </div>
 
@@ -63,7 +63,7 @@ Every text added to the corpus is tied to an authoritative printed edition or ve
 Primary files are 100% classical Arabic with full diacritics (`matns/`, `explanations/`, `entities/`, `lexicons/`). Foreign language translations are kept in separate stand-off overlays (`corpus/translations/{lang}/`), linking 1-to-1 via canonical URNs (`target_urn`). This enables multi-language expansion without merge conflicts or altering Arabic originals.
 
 ### 3. Non-Disruptive Inline Referencing
-Biographical and terminological mentions are linked using Markdown syntax `[النص](mishkah:...)`, governed by the strict invariant:
+Biographical and terminological mentions are linked using Markdown syntax `[Text](mishkah:...)`, governed by the strict invariant:
 ```ts
 stripInlineRefs(text_annotated_ar) === text_ar
 ```
