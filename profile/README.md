@@ -1,5 +1,5 @@
-# مِشْكَاة | Mishkaah
-### بيانات إسلامية مفتوحة ومُنظَّمة • Open, Structured Islamic Data & Reader Apps
+# Mishkaah · مِشْكَاة
+### Open, Structured Islamic Data & Reader Applications
 
 <div align="center">
 
@@ -12,87 +12,99 @@
 [![App](https://img.shields.io/badge/app-reader--apps-green?style=flat-square&logo=flutter)](https://github.com/mishkaah/app)
 [![CI Status](https://img.shields.io/badge/CI-Passing-10B981?style=flat-square&logo=githubactions)](https://github.com/mishkaah/core)
 
+**English** · [العربية](./README.ar.md)
+
 </div>
 
 ---
 
-## 📖 عن مِشْكَاة | About Mishkaah
+## Overview
 
-مِشْكَاة هو مشروع بسيط ومفتوح المصدر يهدف إلى جمع النصوص الإسلامية الصحيحة والمعتمدة من مصادرها الموثوقة، وتنسيقها وربطها ببعضها (من آيات وأحاديث وتفاسير ومتون ومعاجم وتراجم وأماكن)، ثم إتاحتها للجميع بصورة مجانية وميسّرة: سواء كبيانات خام وعلاقات برمجية للمطورين والباحثين في مستودع البيانات ([`mishkaah/corpus`](https://github.com/mishkaah/corpus))، أو عبر تطبيقات قراءة وبحث مبسطة للويب والهواتف ([`mishkaah/app`](https://github.com/mishkaah/app)).
-
-**Mishkaah** is a humble, open-source effort to collect authentic Islamic texts from reliable sources, format and interlink them cleanly, and make them freely available to everyone — both as structured raw data and relations in [`mishkaah/corpus`](https://github.com/mishkaah/corpus) for developers and researchers, and as clean web and mobile reading apps in [`mishkaah/app`](https://github.com/mishkaah/app).
+**Mishkaah** is an open-source initiative that brings together all authentic Islamic materials a Muslim needs into a single unified ecosystem:
+- **Holy Quran**: Canonical Hafs text with authentic Uthmani script and word-level morphology.
+- **Tafseer**: Classical exegeses (Al-Tabari, Ibn Kathir, Al-Qurtubi, Al-Sa'di).
+- **Hadith**: Canonical collections (*Sahih al-Bukhari*, *Sahih Muslim*, Sunan) with transmission chains (*Asanid*) and narrator biographies.
+- **Adhkar & Du'a**: Authentic daily supplications from the Sunnah and *Hisn al-Muslim*.
+- **Scientific Matns & Shuruh**: Classical didactic primers and explanatory commentaries across Aqeedah, Fiqh, Tajweed, Hadith terminology, and Arabic grammar.
+- **Classical Arabic Lexicons**: Three-layer lexical system linking triliteral roots (*Lisan al-Arab*, *Maqayis al-Lughah*), contextual Qur'anic meanings (*Al-Mufradat fi Gharib al-Quran*), and technical juristic terms (*Al-Ta'rifat*).
+- **Unified Apps & Datasets**: Backed by verified open data in [`mishkaah/corpus`](https://github.com/mishkaah/corpus) and presented in a clean, distraction-free web and mobile reading app in [`mishkaah/app`](https://github.com/mishkaah/app).
 
 ---
 
-## 🎨 الهوية البصرية والأيقونات | Visual Identity & App Icons
+## Visual Identity & App Icons
 
-تعتمد مِشْكَاة على هوية بصرية هادئة وبسيطة تناسب جلال النصوص التراثية، مع توفير أيقونات متوافقة تقنيًا مع أنظمة الهواتف الحديثة (iOS 18 و Android):
+Mishkaah embraces a calm, museum-grade aesthetic honoring the dignity of classical Islamic texts, paired with mobile icons engineered to avoid mask-clipping on modern operating systems (iOS 18+ HIG and Android 13–15+ Adaptive Icons):
 
 <div align="center">
 
-| الرمز الخطي | أيقونات التطبيقات للهواتف |
+| Calligraphic Mark | Mobile App Icon Suite |
 | :---: | :---: |
 | <img src="./assets/mishkaah-mark-dark.png" width="260" alt="Mishkaah Calligraphic Mark" /> | <img src="./assets/app-icon-showcase-grid.png" width="460" alt="Mobile App Icon Suite" /> |
-| **شعار مِشْكَاة**<br/>خط الثلث العربي الكلاسيكي | **أيقونات تطبيقات الهواتف (iOS 18 & Android)**<br/>نمط داكن، وفاتح، وألوان متكيفة داخل منطقة الأمان المعتمدة |
+| **Mishkaah Sovereign Mark**<br/>Classical Arabic *Diwan Thuluth* calligraphy | **Mobile App Icons (iOS 18 & Android)**<br/>Dark, Light, and Tinted modes strictly confined within safe zones |
 
 </div>
 
-- **الألوان الأساسية**:
-  - الأسود الداكن (`#09090B`) — خلفية هادئة مريحة للعين في القراءة الليلية.
-  - الذهبي الهادئ (`#E5CFA0` → `#B89655`) — عناصر التمييز الرئيسية.
-  - الورقي الفاتح (`#F6F3EC`) — نمط القراءة النهاري المريح.
-- تفاصيل الهوية الكاملة وملفات الرموز: [`mishkaah/brand`](https://github.com/mishkaah/brand).
+- **Core Palette**:
+  - **Matte Obsidian** (`#09090B`) — Canonical dark canvas providing calm negative space for night reading.
+  - **Champagne Gold** (`#E5CFA0` → `#B89655`) — Warm calligraphic highlight and primary brand accent.
+  - **Parchment Alabaster** (`#F6F3EC`) — Day reading mode inspired by classical manuscript paper.
+- Comprehensive brand assets, guidelines, and design tokens: [`mishkaah/brand`](https://github.com/mishkaah/brand).
 
 ---
 
-## 🛡️ لماذا نتبع قواعد تدقيق صارمة؟ | Why We Follow Strict Verification Rules
+## Strict Verification Principles
 
-لأننا نتعامل مع نصوص الوحي المعصوم (القرآن الكريم، والحديث النبوي الشريف) وكتب التراث العلمي المعتمدة، فإننا نحرص أشد الحرص على ألا تُحدث السكربتات البرمجية أو أدوات المعالجة والـ OCR أو النماذج الذكية أي تحريف لحرف واحد أو إدخال بيانات غير محققة. ولذلك نتبع قواعد عمل واضحة وصارمة لحفظ دقة البيانات وربطها بمصادرها وسهولة صيانتها:
+Because we handle sacred Islamic scriptures and verified scholarly heritage, Mishkaah strictly enforces automated verification to prevent typographical errors, omissions, or unverified additions:
 
-### ١. توثيق المصدر بدقة (`SOURCES_MANIFEST.json`)
-يُرْبَط كل نص يُضاف إلى المشروع بالطبعة المطبوعة أو المصدر المعتمد الذي أُخذ منه، مع تدوين بيانات الناشر والمحقق.
+### 1. Rigorous Source Provenance (`SOURCES_MANIFEST.json`)
+Every text added to the corpus is tied to an authoritative printed edition or verified manuscript, documenting publisher, editor (*Muhaqqiq*), edition year, and volume.
 
-### ٢. أولوية النص العربي وفصل الترجمات (Arabic-First & Stand-Off Translations)
-تظل الملفات الأساسية نصوصًا عربية خالصة مضبوطة بالشكل (`matns/`، `explanations/`، `entities/`، `lexicons/`)، بينما تُحفظ الترجمات (الإنجليزية وغيرها) في ملفات مستقلة (`corpus/translations/en/`) ترتبط بالنص العربي عبر معرّف المورد (`target_urn`)، حتى لا تختلط الترجمات بالنصوص الأصلية ولا تسبب تعارضات عند التعديل.
+### 2. Arabic-First & Stand-Off Translations
+Primary files are 100% classical Arabic with full diacritics (`matns/`, `explanations/`, `entities/`, `lexicons/`). Foreign language translations are kept in separate stand-off overlays (`corpus/translations/{lang}/`), linking 1-to-1 via canonical URNs (`target_urn`). This enables multi-language expansion without merge conflicts or altering Arabic originals.
 
-### ٣. روابط داخلية غير مشوّهة للنص (Non-Disruptive Inline Links)
-عند الإشارة إلى شخص أو مكان أو جماعة أو واقعة أو مصطلح أو جذر، يُستخدم رابط داخلي مثل `[النص](mishkah:...)` يخضع لقاعدة برمجية صارمة:
-$$\text{stripInlineRefs}(\text{text\_annotated\_ar}) \equiv \text{text\_ar}$$
-بحيث تعود الكلمات إلى نصها الأصلي تمامًا عند نزع الروابط دون تغيير أي حرف.
+### 3. Non-Disruptive Inline Referencing
+Biographical and terminological mentions are linked using Markdown syntax `[النص](mishkah:...)`, governed by the strict invariant:
+```ts
+stripInlineRefs(text_annotated_ar) === text_ar
+```
+Stripping reference tags reconstructs the clean canonical Arabic text byte-for-byte.
 
-### ٤. ربط المعاجم اللغوية (Connected Arabic Lexicons)
-ربط الكلمات الصعبة بجذورها اللغوية في المعاجم (`roots/`)، ومعانيها السياقية في كتب الغريب (`meanings/`)، وتعريفاتها الاصطلاحية عند العلماء (`entities/terms/`).
+### 4. Three-Layer Connected Lexicons
+Unfamiliar vocabulary connects directly to:
+- **Layer 1 (`lexicons/roots/`)**: Triliteral and quadriliteral roots in major dictionaries (*Lisan al-Arab*, *Maqayis al-Lughah*).
+- **Layer 2 (`lexicons/meanings/`)**: Contextual Quranic and Hadith definitions (*Gharib al-Quran* by Al-Raghib al-Isfahani).
+- **Layer 3 (`entities/terms/`)**: Technical scholarly terminology (*Al-Ta'rifat* by Al-Jurjani).
 
-### ٥. معايير برمجية منضبطة في TypeScript و Bun
-تُكتب جميع سكربتات التنسيق والتدقيق بلغة TypeScript لبيئة Bun باستخدام مخططات Zod صارمة (`.strict()`) دون استخدام `any` أو `unknown`.
+### 5. Strict TypeScript & Bun Architecture
+All tooling, validators, and compilers are written in strict TypeScript for Bun 1.4 with zero escape hatches: `0` `any`, `0` `unknown`, `0` `.passthrough()`, and every Zod schema ends with `.strict()`.
 
-### ٦. تدقيق برمجي آلي واختبارات ذاتية للتحقق
-يخضع كل تغيير لفحص آلي للتأكد من صحة المخططات وسلامة الروابط وتطابق المصادر. كما تُختبر أدوات التدقيق نفسها ضد عينات بيانات غير صالحة للتأكد من يقظتها وعدم تعطلها.
+### 6. Layer 0 Meta-Validation
+The validation pipeline protects itself using AST guards, cryptographic lockfiles (`validator_lock.json`), and 25 synthetic canary payloads to ensure validators cannot be weakened or bypassed.
 
-### ٧. إدارة العمل عبر المسائل الموثقة (Issue-Driven Maintenance)
-تتم التعديلات والمراجعات عبر مسائل واضحة (GitHub Issues) وطلبات سحب محددة النطاق ليتمكن الجميع من المتابعة والمساهمة بسهولة ووضوح.
+### 7. Issue-Driven Workflow
+Every modification maps to a well-scoped GitHub issue and qualified pull request.
 
 ---
 
-## 🌐 خريطة المستودعات | Ecosystem Repositories
+## Ecosystem Repositories
 
-يتوزع المشروع على ٦ مستودعات مترابطة:
+The project is structured across 6 focused repositories:
 
 ```mermaid
 flowchart TD
-    subgraph DocsAndIdentity["1. الإدارة والهوية"]
-        DOTGITHUB["<b>mishkaah/.github</b><br/>الملف التعريفي وسير العمل المشترك"]
-        BRAND["<b>mishkaah/brand</b><br/>الشعارات وأيقونات التطبيقات ورموز التصميم"]
+    subgraph Governance["1. Governance & Identity"]
+        DOTGITHUB["<b>mishkaah/.github</b><br/>Organization profile & shared CI workflows"]
+        BRAND["<b>mishkaah/brand</b><br/>Logos, app icons & design tokens"]
     end
 
-    subgraph DataAndCore["2. البيانات والسكربتات"]
-        CORPUS["<b>mishkaah/corpus</b><br/>نصوص البيانات الإسلامية وروابطها بصيغة JSON"]
-        CORE["<b>mishkaah/core</b><br/>سكربتات الفحص والتحقق وضغط البيانات"]
+    subgraph DataAndCore["2. Data & Tooling"]
+        CORPUS["<b>mishkaah/corpus</b><br/>Open structured Islamic JSON data"]
+        CORE["<b>mishkaah/core</b><br/>TypeScript validation & SQLite compiler"]
     end
 
-    subgraph LibrariesAndApps["3. المكتبات والتطبيقات"]
-        SDK["<b>mishkaah/sdk</b><br/>مكتبة مساعدة للمطورين في TypeScript"]
-        APP["<b>mishkaah/app</b><br/>تطبيقات القراءة للويب والهواتف"]
+    subgraph LibrariesAndApps["3. Libraries & Applications"]
+        SDK["<b>mishkaah/sdk</b><br/>TypeScript helper library & URN parsers"]
+        APP["<b>mishkaah/app</b><br/>Mobile & web reader apps"]
     end
 
     BRAND -.-> DOTGITHUB
@@ -103,17 +115,19 @@ flowchart TD
     CORPUS --> APP
 ```
 
-| # | المستودع / Repository | الوصف | التقنيات المستخدمة |
+| # | Repository | Description | Technologies |
 | :---: | :--- | :--- | :--- |
-| **1** | [**`mishkaah/.github`**](https://github.com/mishkaah/.github) | واجهة المنظمة وإرشادات العمل وسير عمل GitHub Actions المشتركة. | Markdown, GitHub Actions |
-| **2** | [**`mishkaah/brand`**](https://github.com/mishkaah/brand) | الشعارات وأيقونات تطبيقات الهواتف ورموز التصميم بصيغة JSON. | SVG, High-Res PNG, JSON Tokens |
-| **3** | [**`mishkaah/corpus`**](https://github.com/mishkaah/corpus) | نصوص البيانات الإسلامية وروابط الكيانات والمعاجم والترجمات بصيغة JSON. | 100% Arabic JSON, Git Submodule |
-| **4** | [**`mishkaah/core`**](https://github.com/mishkaah/core) | سكربتات TypeScript و Bun لتنسيق البيانات وتدقيقها وتجميعها في قاعدة بيانات SQLite. | TypeScript, Bun, Zod, SQLite |
-| **5** | [**`mishkaah/sdk`**](https://github.com/mishkaah/sdk) | مكتبة برمجية مساعدة للتعامل مع معرّفات URNs وروابط النصوص وبيانات المشروع. | TypeScript, Bun, npm package |
-| **6** | [**`mishkaah/app`**](https://github.com/mishkaah/app) | تطبيقات ميسرة للقراءة والبحث في نصوص المشروع عبر الويب والهواتف. | Flutter / Modern Web |
+| **1** | [**`mishkaah/.github`**](https://github.com/mishkaah/.github) | Organization profile, community standards, and shared GitHub Actions workflows. | Markdown, GitHub Actions |
+| **2** | [**`mishkaah/brand`**](https://github.com/mishkaah/brand) | Visual identity, calligraphic marks, iOS/Android adaptive app icons, and JSON design tokens. | SVG, High-Res PNG, JSON Tokens |
+| **3** | [**`mishkaah/corpus`**](https://github.com/mishkaah/corpus) | Open structured JSON dataset of authentic Islamic texts: Quran, Tafseer, Hadith, Matns, Entities, and Lexicons. | 100% Arabic JSON, Git Submodule |
+| **4** | [**`mishkaah/core`**](https://github.com/mishkaah/core) | Strict TypeScript, Bun, and Zod validation, formatting, and SQLite FTS5 compilation tooling for the Mishkaah corpus. | TypeScript, Bun, Zod, SQLite |
+| **5** | [**`mishkaah/sdk`**](https://github.com/mishkaah/sdk) | TypeScript SDK (`@mishkaah/sdk`) for parsing Mishkaah URNs, resolving inline entity links, and querying corpus data. | TypeScript, Bun, npm package |
+| **6** | [**`mishkaah/app`**](https://github.com/mishkaah/app) | Unified web and mobile reading and search app for the Quran, Hadith, Tafseer, Adhkar, and classical Islamic texts. | Flutter / Modern Web |
 
 ---
 
-## 🤝 المساهمة والتواصل | Contributing
+## Contributing & Scholarly Waqf
 
-نرحب بمساهمة الباحثين والمحققين والمطورين لمساعدتنا في تدقيق النصوص وتطوير الأدوات. يُرجى الاطلاع على [دليل تنظيم العمل](https://github.com/mishkaah/core/blob/main/docs/01-governance/workflow-and-issues.md) و[إرشادات المساهمة في البيانات](https://github.com/mishkaah/corpus/blob/main/docs/contributing.md) قبل فتح أي طلب سحب.
+The foundational Islamic texts, classical commentaries, and linguistic works in this corpus constitute the public domain heritage of Islam, maintained as an open scholarly endowment (*Waqf*) for the global Muslim Ummah and research community.
+
+Scholars, researchers, and developers are welcome to contribute. Please review the [Governance Guide](https://github.com/mishkaah/core/blob/main/docs/01-governance/workflow-and-issues.md) and [Contributing Guidelines](https://github.com/mishkaah/corpus/blob/main/docs/contributing.md) before submitting pull requests.
