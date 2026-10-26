@@ -1,163 +1,119 @@
-# 🏛️ مِشْكَاة | MISHKAAH
-### المُدَوَّنَة الإِسْلَامِيَّة العِلْمِيَّة الكُبْرَى وَالْمَنَصَّة الهَنْدَسِيَّة الْمُوَحَّدَة
-**The Sovereign Open Islamic Corpus & High-Performance Engineering Platform**
+# مِشْكَاة | Mishkaah
+### بيانات إسلامية مفتوحة ومُنظَّمة • Open, Structured Islamic Data & Reader Apps
 
 <div align="center">
 
 ![Mishkaah Social Banner](./assets/mishkaah-social-banner.png)
 
-[![Corpus](https://img.shields.io/badge/corpus-canonical--data-C8A96A?style=flat-square&logo=git)](https://github.com/mishkaah/corpus)
+[![Corpus](https://img.shields.io/badge/corpus-json--data-C8A96A?style=flat-square&logo=git)](https://github.com/mishkaah/corpus)
 [![Core](https://img.shields.io/badge/core-typescript--bun-09090B?style=flat-square&logo=bun)](https://github.com/mishkaah/core)
 [![Brand](https://img.shields.io/badge/brand-design--tokens-F6F3EC?style=flat-square&logo=figma)](https://github.com/mishkaah/brand)
 [![SDK](https://img.shields.io/badge/sdk-%40mishkaah%2Fsdk-blue?style=flat-square&logo=npm)](https://github.com/mishkaah/sdk)
-[![App](https://img.shields.io/badge/app-cross--platform-green?style=flat-square&logo=flutter)](https://github.com/mishkaah/app)
-[![CI Status](https://img.shields.io/badge/5--Gate%20CI-Deterministic%20Pass-10B981?style=flat-square&logo=githubactions)](https://github.com/mishkaah/core)
+[![App](https://img.shields.io/badge/app-reader--apps-green?style=flat-square&logo=flutter)](https://github.com/mishkaah/app)
+[![CI Status](https://img.shields.io/badge/CI-Passing-10B981?style=flat-square&logo=githubactions)](https://github.com/mishkaah/core)
 
 </div>
 
 ---
 
-## 📖 1. الآية الكريمة والرؤية الهندسية | Spiritual Anchor & The Architectural Metaphor
+## 📖 عن مِشْكَاة | About Mishkaah
 
-يستمد مشروع **مِشْكَاة (Mishkaah)** اسمه ورؤيته الروحية من آية النور المباركة (سورة النور: ٣٥):
+مِشْكَاة هو مشروع بسيط ومفتوح المصدر يهدف إلى جمع النصوص الإسلامية الصحيحة والمعتمدة من مصادرها الموثوقة، وتنسيقها وربطها ببعضها (من آيات وأحاديث وتفاسير ومتون ومعاجم وتراجم وأماكن)، ثم إتاحتها للجميع بصورة مجانية وميسّرة: سواء كبيانات خام وعلاقات برمجية للمطورين والباحثين في مستودع البيانات ([`mishkaah/corpus`](https://github.com/mishkaah/corpus))، أو عبر تطبيقات قراءة وبحث مبسطة للويب والهواتف ([`mishkaah/app`](https://github.com/mishkaah/app)).
 
-> **﴿اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ ۚ مَثَلُ نُورِهِ كَمِشْكَاةٍ فِيهَا مِصْبَاحٌ ۖ الْمِصْبَاحُ فِي زُجَاجَةٍ ۖ الزُّجَاجَةُ كَأَنَّهَا كَوْكَبٌ دُرِّيٌّ يُوقَدُ مِن شَجَرَةٍ مُّبَارَكَةٍ زَيْتُونَةٍ لَّا شَرْقِيَّةٍ وَلَا غَرْبِيَّةٍ يَكَادُ زَيْتُهَا يُضِيءُ وَلَوْ لَمْ تَمْسَسْهُ نَارٌ ۚ نُّورٌ عَلَىٰ نُورٍ ۗ يَهْدِي اللَّهُ لِنُورِهِ مَن يَشَاءُ ۚ وَيَضْرِبُ اللَّهُ الْأَمْثَالَ لِلنَّاسِ ۗ وَاللَّهُ بِكُلِّ شَيْءٍ عَلِيمٌ﴾**
-> 
-> *"Allah is the Light of the heavens and the earth. The example of His light is like a niche within which is a lamp; the lamp is within glass, the glass as if it were a pearlescent star lit from a blessed olive tree, neither of the east nor of the west, whose oil would almost glow even if untouched by fire. Light upon light. Allah guides to His light whom He wills..."*
-
-### الأركان المعمارية الثلاثة للمنظومة | The Three Architectural Pillars
-
-```
-      +-------------------------------------------------------------+
-      |                  المِشْكَاة (Al-Mishkah)                     |
-      |   The Immutable Mathematical Niche: Git, TypeScript & CI    |
-      |  +-------------------------------------------------------+  |
-      |  |                الزُّجَاجَة (Al-Zujajah)                  |  |
-      |  |    Pure Crystal Glass: Collation & Forensic Markup    |  |
-      |  |  +-------------------------------------------------+  |  |
-      |  |  |              المِصْبَاح (Al-Misbah)             |  |  |
-      |  |  |      The Luminous Revelation: Quran & Sunnah    |  |  |
-      |  |  +-------------------------------------------------+  |  |
-      |  +-------------------------------------------------------+  |
-      +-------------------------------------------------------------+
-```
-
-1. **المِشْكَاة (Al-Mishkah — The Wall Niche)**:  
-   الوعاء الهندسي الحافظ الذي يجمع النور ويمنع تبدده: مستودعات برمجية غير قابلة للتلاعب (Immutable Git Repositories)، ومخططات ضبط بيانات صارمة (Strict Zod Schemas)، وبوابات فحص حتمية (5-Gate Deterministic CI)، ومراقب ميتا-هندسي (Layer 0 Meta-Validator) يحمي المنظومة برياضيات غير قابلة للاختراق.
-2. **الزُّجَاجَة (Al-Zujajah — The Crystal Glass)**:  
-   الصفاء النصي الفائق: نصوص عربية مضبوطة بالشكل التام، مقابلة سطرًا بسطر وحرفًا بحرف على أمهات الطبعات الخطية والمطبوعات المحققة المعتمدة (*المقابلة والتحقيق الجنائي*)، خالية من شوائب التوليد الآلي غير المنضبط.
-3. **المِصْبَاح (Al-Misbah — The Radiant Lamp)**:  
-   الوحي المعصوم والتراث العلمي الخالد: القرآن الكريم بالقراءات العشر المتواترة ورواياتها العشرين، والحديث النبوي الشريف بأسانيده وكتبه التسعة المعتمدة، والتفاسير المعتمدة، والمتون العلمية وشروحها، والمعجم اللغوي ثلاثي الطبقات.
+**Mishkaah** is a humble, open-source effort to collect authentic Islamic texts from reliable sources, format and interlink them cleanly, and make them freely available to everyone — both as structured raw data and relations in [`mishkaah/corpus`](https://github.com/mishkaah/corpus) for developers and researchers, and as clean web and mobile reading apps in [`mishkaah/app`](https://github.com/mishkaah/app).
 
 ---
 
-## 🎨 2. فلسفة الهُوِيَّة البصرية والصمت الهندسي | Visual Identity & "Geometric Silence"
+## 🎨 الهوية البصرية والأيقونات | Visual Identity & App Icons
 
-تنتهج مِشْكَاة مبدأ **الصمت الهندسي (Geometric Silence)**: جلال التراث ومهابته يستوجبان التواضع والوقار، والابتعاد التام عن الزخارف المصطنعة والرموز البدائية الرخيصة.
+تعتمد مِشْكَاة على هوية بصرية هادئة وبسيطة تناسب جلال النصوص التراثية، مع توفير أيقونات متوافقة تقنيًا مع أنظمة الهواتف الحديثة (iOS 18 و Android):
 
 <div align="center">
 
-| الختم السيادي الشريف | المنظومة الأيقونية لأنظمة الهواتف المحمولة |
+| الرمز الخطي | أيقونات التطبيقات للهواتف |
 | :---: | :---: |
-| <img src="./assets/mishkaah-mark-dark.png" width="280" alt="Sovereign Calligraphic Mark" /> | <img src="./assets/app-icon-showcase-grid.png" width="460" alt="Mobile App Icon Suite" /> |
-| **The Sovereign Calligraphic Seal**<br/>خط الثلث الجلي الأصيل (*ديوان الثلث*) داخل مدار هالي عريض ($r=360\text{px}$) | **iOS 18+ HIG & Android 13–15+ Adaptive Icon Suite**<br/>رمز الطغراء المتماسك `مِشْكَاة` داخل منطقة الأمان الحتمية ($R=244.7\text{px} \ll 312\text{px}$) |
+| <img src="./assets/mishkaah-mark-dark.png" width="260" alt="Mishkaah Calligraphic Mark" /> | <img src="./assets/app-icon-showcase-grid.png" width="460" alt="Mobile App Icon Suite" /> |
+| **شعار مِشْكَاة**<br/>خط الثلث العربي الكلاسيكي | **أيقونات تطبيقات الهواتف (iOS 18 & Android)**<br/>نمط داكن، وفاتح، وألوان متكيفة داخل منطقة الأمان المعتمدة |
 
 </div>
 
-- **لوحة الألوان الأساسية**:
-  - أسود الأوبسيديان المعتم (**Matte Obsidian** `#09090B`) — سكون المحراب والعمق الفضائي.
-  - ذهب الشمبانيا السائل (**Champagne Gold** `#E5CFA0` → `#B89655`) — تباين ملكي بنسبة `11.4:1` (يتجاوز معايير WCAG AAA).
-  - رق الألباستر الكريمي (**Parchment Alabaster** `#F6F3EC`) — سكينة القراءة الورقية الكلاسيكية وحبر البرونز الداكن (`12.8:1`).
-- تفاصيل الهوية الكاملة وملفات التصميم المفتوحة: 👉 [`mishkaah/brand`](https://github.com/mishkaah/brand).
+- **الألوان الأساسية**:
+  - الأسود الداكن (`#09090B`) — خلفية هادئة مريحة للعين في القراءة الليلية.
+  - الذهبي الهادئ (`#E5CFA0` → `#B89655`) — عناصر التمييز الرئيسية.
+  - الورقي الفاتح (`#F6F3EC`) — نمط القراءة النهاري المريح.
+- تفاصيل الهوية الكاملة وملفات الرموز: [`mishkaah/brand`](https://github.com/mishkaah/brand).
 
 ---
 
-## 📜 3. الدستور الصارم لتوثيق وصيانة البيانات | The 7 Ironclad Rules of Data Authenticity
+## 🛡️ لماذا نتبع قواعد تدقيق صارمة؟ | Why We Follow Strict Verification Rules
 
-لضمان سلامة التراث الإسلامي الرقمي للأجيال القادمة، تخضع منظومة مِشْكَاة لسبعة مبادئ علمية وهندسية صارمة لا تقبل الاستثناء:
+لأننا نتعامل مع نصوص الوحي المعصوم (القرآن الكريم، والحديث النبوي الشريف) وكتب التراث العلمي المعتمدة، فإننا نحرص أشد الحرص على ألا تُحدث السكربتات البرمجية أو أدوات المعالجة والـ OCR أو النماذج الذكية أي تحريف لحرف واحد أو إدخال بيانات غير محققة. ولذلك نتبع قواعد عمل واضحة وصارمة لحفظ دقة البيانات وربطها بمصادرها وسهولة صيانتها:
 
-### ١. التوثيق المطبوع والمخطوط المقيد (`SOURCES_MANIFEST.json`)
-لا يُقبل أي نص في المُدونة دون إسناده إلى طبعة محققة معتمدة أو مخطوط أصيل (مثل: مجمع الملك فهد لطباعة المصحف الشريف، دار المنهاج، مؤسسة الرسالة، دار التأصيل). تخضع النسخ المصورة والـ PDF لتدقيق بصري وتقاطع مع مصادر الإدخال الثنائية المتزامنة، مع تسجيل بيانات الطبعة والمحقق وسنة النشر ورقم الإيداع بدقة متناهية.
+### ١. توثيق المصدر بدقة (`SOURCES_MANIFEST.json`)
+يُرْبَط كل نص يُضاف إلى المشروع بالطبعة المطبوعة أو المصدر المعتمد الذي أُخذ منه، مع تدوين بيانات الناشر والمحقق.
 
-### ٢. المركزية العربية المطلقة والترجمات الانفصالية (Arabic-First & Stand-Off Translations)
-النصوص الأصلية في قلب المنظومة (`matns/`، `explanations/`، `entities/`، `lexicons/`) عربية ١٠٠٪ بنسبة تشكيل كاملة. لا تُخلط الترجمات الأجنبية في ذات السجلات؛ بل تُحفظ الترجمات (الإنجليزية وغيرها) في طبقات انفصالية منفصلة (`corpus/translations/en/`) ترتبط بالنص العربي الأصيل عبر معرّف المورد الموحد (`target_urn`).
+### ٢. أولوية النص العربي وفصل الترجمات (Arabic-First & Stand-Off Translations)
+تظل الملفات الأساسية نصوصًا عربية خالصة مضبوطة بالشكل (`matns/`، `explanations/`، `entities/`، `lexicons/`)، بينما تُحفظ الترجمات (الإنجليزية وغيرها) في ملفات مستقلة (`corpus/translations/en/`) ترتبط بالنص العربي عبر معرّف المورد (`target_urn`)، حتى لا تختلط الترجمات بالنصوص الأصلية ولا تسبب تعارضات عند التعديل.
 
-### ٣. السجل الأنطولوجي السداسي والربط الداخلي غير المشوّه (Universal 6-Domain Graph)
-تُربط كافة الأعيان والمفاهيم الواردة في النصوص (الأشخاص `identity`، الأماكن `place`، الجماعات `group`، الوقائع `event`، المصطلحات الفنية `term`، والآثار المادية `object`) عبر وسوم مضمنة ذكية `[النص](mishkah:...)`. ويحكم هذا الوسم قانون رياضي حتمي:
+### ٣. روابط داخلية غير مشوّهة للنص (Non-Disruptive Inline Links)
+عند الإشارة إلى شخص أو مكان أو جماعة أو واقعة أو مصطلح أو جذر، يُستخدم رابط داخلي مثل `[النص](mishkah:...)` يخضع لقاعدة برمجية صارمة:
 $$\text{stripInlineRefs}(\text{text\_annotated\_ar}) \equiv \text{text\_ar}$$
-أي أن إزالة وسوم الربط تعيد النص العربي الأصيل حرفًا بحرف دون أدنى تشويه أو إخلال.
+بحيث تعود الكلمات إلى نصها الأصلي تمامًا عند نزع الروابط دون تغيير أي حرف.
 
-### ٤. البنية المعجمية العربية ثلاثية الطبقات (3-Layer Lexical Architecture)
-يرتبط كل لفظ غريب في القرآن والحديث بنظام معجمي محكم يتألف من ٣ طبقات:
-- **الطبقة الأولى (الجذور والمعاجم العامة)**: ربط اللفظ بجذره الثلاثي أو الرباعي في أمهات المعاجم (*لسان العرب*، *تاج العروس*، *القاموس المحيط*).
-- **الطبقة الثانية (معاجم غريب الأثر والسياق)**: المعنى الدقيق في السياق التفسيري أو الحديثي (*غريب القرآن* لابن قتيبة، *النهاية في غريب الحديث* لابن الأثير).
-- **الطبقة الثالثة (الاصطلاحات الشرعية التخصصية)**: التعريفات الأصولية والفقهية والكلامية للفظ عند أئمة الفن (*التعريفات* للجرجاني، *الكليات* لأبي البقاء).
+### ٤. ربط المعاجم اللغوية (Connected Arabic Lexicons)
+ربط الكلمات الصعبة بجذورها اللغوية في المعاجم (`roots/`)، ومعانيها السياقية في كتب الغريب (`meanings/`)، وتعريفاتها الاصطلاحية عند العلماء (`entities/terms/`).
 
-### ٥. معايير TypeScript الصارمة للبيئة Bun 1.4 (`.strict()`)
-تُبنى محركات المنظومة وأدواتها بنسبة **١٠٠٪ بلغة TypeScript** على بيئة تشغيل **Bun 1.4**:
-- يُمنع منعًا باتًا استخدام `any`، `unknown`، `z.any()`، `z.unknown()`، أو التجاوز بـ `.passthrough()` أو `@ts-ignore`.
-- جميع مخططات كائنات Zod تنتهي بالدالة `.strict()` وتعتمد الاتحادات الحرفية الصريحة (`z.enum([...])`) والتعبيرات النمطية المحددة.
+### ٥. معايير برمجية منضبطة في TypeScript و Bun
+تُكتب جميع سكربتات التنسيق والتدقيق بلغة TypeScript لبيئة Bun باستخدام مخططات Zod صارمة (`.strict()`) دون استخدام `any` أو `unknown`.
 
-### ٦. بوابات الفحص الحتمية الخمس ومراقب الميتا (5-Gate CI & Layer 0 Meta-Validator)
-لا يُدمج أي طلب سحب (PR) في المنظومة إلا بعد اجتياز ٥ بوابات فحص حتمية:
-1. **Gate 1**: مطابقة كافة السجلات لمخططات Zod الصارمة وتوثيق المصادر في `SOURCES_MANIFEST.json`.
-2. **Gate 2**: فحص السلامة المعجمية والمطابقة التامة لخاصية نزع الروابط المضمنة.
-3. **Gate 3**: فحص سلامة الرسم القرآني وتطابق الروايات والتفاسير.
-4. **Gate 4**: مطابقة أسانيد الحديث ورتب الرجال والتسلسل الزمني للطبقات.
-5. **Gate 5**: البناء التجميعي الحتمي لقاعدة SQLite FTS5 المضغوطة واختبارات الأداء اللحظي (<50ms).
+### ٦. تدقيق برمجي آلي واختبارات ذاتية للتحقق
+يخضع كل تغيير لفحص آلي للتأكد من صحة المخططات وسلامة الروابط وتطابق المصادر. كما تُختبر أدوات التدقيق نفسها ضد عينات بيانات غير صالحة للتأكد من يقظتها وعدم تعطلها.
 
-ويحرس هذه البوابات **مراقب الميتا (Layer 0 Meta-Validator)**، المزود بحارس شجرة الإعراب المجردة (AST Guard)، وأقفال تجزئة SHA-256، وحزمة **السموم الاصطناعية (25 Poison Pills Canary Suite)** التي تزرع عينات بيانات فاسدة في الذاكرة للتحقق من يقظة المحرك وقدرته على رفض أي تلاعب بنسبة ١٠٠٪.
-
-### ٧. الحوكمة اللامركزية وحتمية التوثيق المسبق (Issue-First Governance)
-لا يُقبل أي تعديل أو إضافة بيانات إلا عبر مسألة موثقة (GitHub Issue)، مع تحديد النطاق بدقة، والتحقق المستمر من عدم كسر أي مسارات أو روابط نسبية.
+### ٧. إدارة العمل عبر المسائل الموثقة (Issue-Driven Maintenance)
+تتم التعديلات والمراجعات عبر مسائل واضحة (GitHub Issues) وطلبات سحب محددة النطاق ليتمكن الجميع من المتابعة والمساهمة بسهولة ووضوح.
 
 ---
 
-## 🌐 4. خريطة مستودعات المنظومة | The 6-Repository Ecosystem Map
+## 🌐 خريطة المستودعات | Ecosystem Repositories
 
-تتوزع منظومة مِشْكَاة على ٦ مستودعات رئيسية متكاملة تحت المظلة الرسمية [`https://github.com/mishkaah`](https://github.com/mishkaah):
+يتوزع المشروع على ٦ مستودعات مترابطة:
 
 ```mermaid
 flowchart TD
-    subgraph Governance["1. الحوكمة والهوية"]
-        DOTGITHUB["<b>mishkaah/.github</b><br/>الدستور والواجهة العامة<br/>Org Profile & Shared Workflows"]
-        BRAND["<b>mishkaah/brand</b><br/>الهُوِيَّة والتَّصَامِيم<br/>Design System, SVGs, App Icons & Tokens"]
+    subgraph DocsAndIdentity["1. الإدارة والهوية"]
+        DOTGITHUB["<b>mishkaah/.github</b><br/>الملف التعريفي وسير العمل المشترك"]
+        BRAND["<b>mishkaah/brand</b><br/>الشعارات وأيقونات التطبيقات ورموز التصميم"]
     end
 
-    subgraph PlatformEngine["2. المحرك والبيانات المعيارية"]
-        CORPUS["<b>mishkaah/corpus</b><br/>المُدَوَّنة العلمية الكبرى<br/>Pure Canonical Arabic JSON Data"]
-        CORE["<b>mishkaah/core</b><br/>النَّوَاة الهندسية الموحدة<br/>100% TypeScript + Bun 1.4<br/>5-Gate CI, Meta-Validator, OCR & SQLite Compiler"]
+    subgraph DataAndCore["2. البيانات والسكربتات"]
+        CORPUS["<b>mishkaah/corpus</b><br/>نصوص البيانات الإسلامية وروابطها بصيغة JSON"]
+        CORE["<b>mishkaah/core</b><br/>سكربتات الفحص والتحقق وضغط البيانات"]
     end
 
-    subgraph DeveloperEcosystem["3. المطورون والمكتبات"]
-        SDK["<b>mishkaah/sdk</b><br/>الحَقِيبَة البرمجية @mishkaah/sdk<br/>TypeScript / Bun URN Resolver & Query Client"]
+    subgraph LibrariesAndApps["3. المكتبات والتطبيقات"]
+        SDK["<b>mishkaah/sdk</b><br/>مكتبة مساعدة للمطورين في TypeScript"]
+        APP["<b>mishkaah/app</b><br/>تطبيقات القراءة للويب والهواتف"]
     end
 
-    subgraph ClientApplications["4. التطبيقات والمنصة"]
-        APP["<b>mishkaah/app</b><br/>التَّطبِيق والمنصَّة الموحدة<br/>Cross-Platform Research Client (Mobile, Desktop, Web)<br/>Liquid Glass & Material You"]
-    end
-
-    BRAND -.->|"supplies assets to"| DOTGITHUB
-    BRAND -.->|"supplies icons & tokens to"| APP
-    CORE -->|"mounts as submodule & validates"| CORPUS
-    CORE -->|"exports types & schemas to"| SDK
-    SDK -->|"powers data queries in"| APP
-    CORPUS -->|"compiles into SQLite FTS5 for"| APP
+    BRAND -.-> DOTGITHUB
+    BRAND -.-> APP
+    CORE --> CORPUS
+    CORE --> SDK
+    SDK --> APP
+    CORPUS --> APP
 ```
 
-| # | المستودع / Repository | الوصف والنطاق | التقنيات والبيئة |
+| # | المستودع / Repository | الوصف | التقنيات المستخدمة |
 | :---: | :--- | :--- | :--- |
-| **1** | [**`mishkaah/.github`**](https://github.com/mishkaah/.github) | واجهة المنظمة الرسمية، ودستور التوثيق والسياسات المشتركة، وقوالب المسائل وسير عمل GitHub Actions. | Markdown, GitHub Actions |
-| **2** | [**`mishkaah/brand`**](https://github.com/mishkaah/brand) | مستودع الهوية البصرية، والأختام السيادية المتجهة (SVGs)، وأيقونات الهواتف المحمولة (iOS 18 / Android)، وحزم رموز التصميم JSON. | SVG, High-Res PNG, JSON Tokens |
-| **3** | [**`mishkaah/corpus`**](https://github.com/mishkaah/corpus) | المُدونة العلمية الكبرى: سجلات البيانات المعيارية الخالصة (القرآن، الحديث، التفسير، المتون، المعاجم، الأعيان)، وترجماتها الانفصالية. | 100% Pure Arabic JSON, Git Submodule |
-| **4** | [**`mishkaah/core`**](https://github.com/mishkaah/core) | النواة الهندسية الموحدة: مخططات Zod، بوابات الفحص الخمس، مراقب الميتا، أدوات معالجة المخطوطات والـ OCR، ومُجمّع قواعد بيانات SQLite FTS5. | TypeScript, Bun 1.4, Zod, SQLite/FTS5 |
-| **5** | [**`mishkaah/sdk`**](https://github.com/mishkaah/sdk) | حزمة المطورين الرسمية `@mishkaah/sdk`: محلل معرّفات الموارد (URN Resolver)، وأنواع TypeScript ومخططات التحقق، ومحرك الاستعلامات المحلي السريع. | TypeScript, Bun, npm package |
-| **6** | [**`mishkaah/app`**](https://github.com/mishkaah/app) | التطبيق الموحد متعدد المنصات (iOS, Android, macOS, Windows, Linux, Web): قراءة وبحث فوري أوفلاين مع واجهة Liquid Glass وزجاج الأوبسيديان. | Flutter / Kotlin Multiplatform |
+| **1** | [**`mishkaah/.github`**](https://github.com/mishkaah/.github) | واجهة المنظمة وإرشادات العمل وسير عمل GitHub Actions المشتركة. | Markdown, GitHub Actions |
+| **2** | [**`mishkaah/brand`**](https://github.com/mishkaah/brand) | الشعارات وأيقونات تطبيقات الهواتف ورموز التصميم بصيغة JSON. | SVG, High-Res PNG, JSON Tokens |
+| **3** | [**`mishkaah/corpus`**](https://github.com/mishkaah/corpus) | نصوص البيانات الإسلامية وروابط الكيانات والمعاجم والترجمات بصيغة JSON. | 100% Arabic JSON, Git Submodule |
+| **4** | [**`mishkaah/core`**](https://github.com/mishkaah/core) | سكربتات TypeScript و Bun لتنسيق البيانات وتدقيقها وتجميعها في قاعدة بيانات SQLite. | TypeScript, Bun, Zod, SQLite |
+| **5** | [**`mishkaah/sdk`**](https://github.com/mishkaah/sdk) | مكتبة برمجية مساعدة للتعامل مع معرّفات URNs وروابط النصوص وبيانات المشروع. | TypeScript, Bun, npm package |
+| **6** | [**`mishkaah/app`**](https://github.com/mishkaah/app) | تطبيقات ميسرة للقراءة والبحث في نصوص المشروع عبر الويب والهواتف. | Flutter / Modern Web |
 
 ---
 
-## 🤝 5. المساهمة والانضمام | Contributing & Scholarly Integrity
+## 🤝 المساهمة والتواصل | Contributing
 
-نرحب بالباحثين الشرعيين، وخبراء المخطوطات، ومهندسي النظم للمساهمة في بناء هذا الصرح التراثي الرقمي. يُرجى مراجعة [دليل المساهمة الموحد](https://github.com/mishkaah/core/blob/main/docs/01-governance-and-standards/contributing-guidelines.md) وقراءة شروط التدقيق قبل فتح أي طلب سحب.
-
-**﴿وَقُلِ اعْمَلُوا فَسَيَرَى اللَّهُ عَمَلَكُمْ وَرَسُولُهُ وَالْمُؤْمِنُونَ﴾**
+نرحب بمساهمة الباحثين والمحققين والمطورين لمساعدتنا في تدقيق النصوص وتطوير الأدوات. يُرجى الاطلاع على [دليل تنظيم العمل](https://github.com/mishkaah/core/blob/main/docs/01-governance/workflow-and-issues.md) و[إرشادات المساهمة في البيانات](https://github.com/mishkaah/corpus/blob/main/docs/contributing.md) قبل فتح أي طلب سحب.
