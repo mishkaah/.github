@@ -1,6 +1,6 @@
 <div align="center">
 
-![Mishkaah](https://raw.githubusercontent.com/mishkaah/.github/main/profile/assets/mishkaah-social-banner.png)
+![Mishkaah](https://raw.githubusercontent.com/mishkaah/brand/main/animations/svg/mishkaah-hero-banner-animated.svg)
 
 **English** · [العربية](./roadmap.ar.md)
 
