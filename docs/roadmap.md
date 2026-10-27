@@ -11,7 +11,7 @@
 This roadmap outlines our scheduled milestones and verified textual additions for the Mishkaah Open Islamic Corpus across the next 6 months. All work adheres to strict scholarly verification against accredited critical editions and official portals.
 
 > [!TIP]
-> **Live Interactive Timeline View**: Track the real-time 6-month visual roadmap on the public [Mishkaah Roadmap Timeline Project](https://github.com/orgs/mishkaah/projects/3/views/2). Contributors can monitor task progression across sprints on the internal [Corpus Kanban Board](https://github.com/orgs/mishkaah/projects/1/views/2).
+> **Live Interactive Timeline View**: Track the real-time 6-month visual roadmap and milestones on the public [Mishkaah Roadmap Timeline Project](https://github.com/orgs/mishkaah/projects/3/views/2).
 
 ---
 
@@ -34,10 +34,11 @@ This roadmap outlines our scheduled milestones and verified textual additions fo
 
 ---
 
-### Automated Synchronization Architecture
+### How Milestones Are Maintained
 
-- **Decoupled Privacy**: Contributor tasks, PR audits, and technical issues are tracked privately on the internal collaboration Kanban board (`mishkaah/projects/1`).
-- **Automated Milestone Rollup**: When task cards transition (`Todo` → `In Progress` → `Done`), automated synchronization computes progress metrics and advances milestone statuses.
-- **Deterministic Public Visibility**: The public [Mishkaah Roadmap Timeline](https://github.com/orgs/mishkaah/projects/3/views/2) reflects current progress cleanly without exposing raw work-in-progress drafts.
+- **Verification First**: Foundational texts undergo multi-stage forensic verification against accredited sources before expanding into additional titles.
+- **Accredited Sources**: Every entry is grounded in an approved critical printed edition or official scholarly portal registered in `corpus/SOURCES_MANIFEST.json`.
+- **Language Separation**: Classical Arabic texts remain pristine with full diacritics; translations are maintained in decoupled stand-off overlays.
+- **Automated Milestone Updates**: Milestone progress updates automatically as textual units pass verification and contributor tasks are completed.
 
 To learn how to contribute or report verified textual notes, review our [Contribution & Verification Guide](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md).
