@@ -2,8 +2,8 @@
 
 ![Mishkaah](https://raw.githubusercontent.com/mishkaah/brand/main/animations/svg/mishkaah-hero-banner-animated.svg)
 
-### ***Verified Islamic Heritage. Connected Knowledge.***
-*(تُرَاثٌ مُحَقَّق.. وَمَعْرِفَةٌ مُتَرَابِطَة)*
+### ***Preserved Text. Trusted Knowledge.***
+*(نَصٌّ مَصُون.. وَعِلْمٌ مَأْمُون)*
 
 **English** · [العربية](https://github.com/mishkaah/.github/blob/main/profile/README.ar.md)
 

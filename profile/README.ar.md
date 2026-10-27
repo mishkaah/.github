@@ -2,7 +2,7 @@
 
 ![مشكاة](https://raw.githubusercontent.com/mishkaah/brand/main/animations/svg/mishkaah-hero-banner-animated.svg)
 
-### ***تُرَاثٌ مُحَقَّق.. وَمَعْرِفَةٌ مُتَرَابِطَة***
+### ***نَصٌّ مَصُون.. وَعِلْمٌ مَأْمُون***
 
 [English](https://github.com/mishkaah/.github/blob/main/profile/README.md) · **العربية**
 
