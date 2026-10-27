@@ -1,5 +1,5 @@
 name: "01. Verified Textual or Reference Report (Requires Source Proof)"
-description: "Submit a documented textual or reference discrepancy backed by citation to the approved printed edition. Unsubstantiated issues are closed immediately."
+description: "Submit a documented textual or reference discrepancy backed by citation to an approved, accredited source. Unsubstantiated issues are closed immediately."
 title: "[DISCREPANCY:VERIFIED] "
 labels: ["type:public-feedback", "status:awaiting-triage"]
 body:
@@ -9,11 +9,11 @@ body:
         ### 📖 Verified Textual or Reference Report / استدراك نصي أو توثيقي معتمد
         
         > ⚠️ **MANDATORY POLICY / تنبيه إلزامي**:
-        > Before submitting this report, you **MUST** read our [Contribution & Verification Rules](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md).
-        > All texts in Mishkaah undergo rigorous multi-stage verification against approved printed editions.
-        > **Any issue opened without exact citation, solid verifiable proof, and page references from the approved printed edition will be rejected and closed immediately.**
+        > Before submitting this report, you **MUST** read our [Contribution & Verification Guide](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md).
+        > All texts in Mishkaah undergo careful multi-stage verification against accredited sources.
+        > **Any issue opened without exact citation, solid verifiable proof, and references to an approved source (accredited printed edition or official scholarly portal) will be rejected and closed immediately.**
         >
-        > يجب قراءة [ضوابط المساهمة والتدقيق العلمي](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.ar.md) قبل فتح هذا البلاغ. أي استدراك يُفتح دون إحالة دقيقة للطبعة المعتمدة ودليل موثق (الجزء والصفحة أو صورة واضحة) سيُرفض ويُغلق فوراً.
+        > يجب قراءة [دليل المساهمة والتدقيق](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.ar.md) قبل فتح هذا البلاغ. أي استدراك يُفتح دون إحالة دقيقة لمصدر معتمد ودليل موثق (طبعة محققة مع الجزء والصفحة أو بوابة علمية رسمية معتمدة) سيُرفض ويُغلق فوراً.
 
   - type: dropdown
     id: domain
@@ -71,9 +71,9 @@ body:
   - type: textarea
     id: printed_reference
     attributes:
-      label: "Approved Printed Edition Citation (طبعة الكتاب المعتمدة والمحقق ورقم الصفحة)"
-      description: "Mandatory: publisher, editor (Muhaqqiq), volume, and page number from the approved printed edition."
-      placeholder: "e.g. Dar Tuq al-Najah edition, edited by M. Zuhayr al-Nasir, Vol. 1, p. 12"
+      label: "Approved Source / Edition Reference (المصدر المعتمد أو الطبعة المحققة)"
+      description: "Mandatory: publisher/portal, editor (Muhaqqiq), volume, page number, or accredited scholarly reference URL."
+      placeholder: "e.g. Dar Tuq al-Najah edition, edited by M. Zuhayr al-Nasir, Vol. 1, p. 12, or official scholarly portal URL"
     validations:
       required: true
 
@@ -81,8 +81,8 @@ body:
     id: verification_proof
     attributes:
       label: "Verifiable Proof / Scan URL (دليل التحقيق أو رابط النسخة المصورة)"
-      description: "Provide links to high-resolution manuscript/printed edition scans (e.g. Archive.org, Waqfeya)."
-      placeholder: "Links to PDF archive or volume scan..."
+      description: "Provide links to high-resolution manuscript/printed edition scans or accredited digital archives."
+      placeholder: "Links to PDF archive, volume scan, or official portal..."
     validations:
       required: false
 
@@ -91,5 +91,5 @@ body:
     attributes:
       label: "Verification Confirmation (إقرار التدقيق والمصدر)"
       options:
-        - label: "I confirm that I have read the Contribution & Verification Rules and that this discrepancy is verified directly against an approved critical printed edition."
+        - label: "I confirm that I have read the Contribution & Verification Guide and that this discrepancy is verified directly against an approved, accredited source."
           required: true

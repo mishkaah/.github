@@ -6,7 +6,7 @@
 
 ### We collect and verify, never author
 
-Mishkaah does not generate or paraphrase religious texts. No machine learning models write or edit any text in this corpus. Everything comes from verified printed editions of classical works, with documented publisher, editor (*Muhaqqiq*), publication year, volume, and page number recorded in `corpus/SOURCES_MANIFEST.json`.
+Mishkaah does not generate or paraphrase religious texts. No machine learning models write or edit any text in this corpus. Everything comes from trusted, accredited sources (critical printed editions and official scholarly portals), with documented publisher, editor (*Muhaqqiq*), publication year, volume, and page number or digital archive reference recorded in `corpus/SOURCES_MANIFEST.json`.
 
 ---
 
@@ -40,14 +40,14 @@ If adding a link changes even one letter or space of the original text, the veri
 Every contribution passes through automated checks before anyone can merge it:
 - **Valid JSON and UTF-8**: Ensures clean encoding with no hidden formatting characters.
 - **Strict schemas**: Every field must match predefined types; unexpected keys are rejected.
-- **Source verification**: Checks that every cited book exists in our approved sources catalog.
+- **Source verification**: Checks that every cited work exists in our approved sources catalog.
 - **Self-testing checker**: On every run, the checker tests itself against 28 intentional test errors (tampered verses, missing tashkeel, bad references) to confirm that the validator itself is active and functioning.
 
 ---
 
 ### Mandatory second-person review
 
-Automated checks verify structure, links, and checksums, while scholarly review confirms every word against the printed edition:
+Automated checks verify structure, links, and checksums, while scholarly review confirms every word against the approved source:
 - The person who prepares a change cannot approve or merge it (`Reviewer != Author`).
-- Any correction to a classical text must reference the specific printed edition, volume, and page number.
-- A second reviewer checks the change against the physical book or high-resolution scan before approving.
+- Any correction or revision must reference the approved source (critical printed edition, volume, and page, or accredited scholarly archive).
+- A second reviewer checks the change against the verified source before approving.

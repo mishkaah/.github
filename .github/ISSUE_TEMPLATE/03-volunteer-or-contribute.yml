@@ -16,7 +16,7 @@ body:
       label: "Primary Contribution Track (مسار المساهمة الرئيسي)"
       description: "Select how you would like to participate."
       options:
-        - "Scholarly Reviewer / Tahqeeq (Verifying text against printed editions)"
+        - "Scholarly Reviewer / Tahqeeq (Verifying text against accredited sources)"
         - "Arabic Proofreader & Vocalizer (Checking Tashkeel, syntax, and matns)"
         - "Translator & Localization Reviewer (English & global language overlays)"
         - "Software Engineer (TypeScript, Bun, SQLite, Zod, Tooling)"
