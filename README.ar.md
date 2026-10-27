@@ -1,8 +1,8 @@
 <div align="center">
 
-![مشكاة](./assets/mishkaah-social-banner.png)
+![مشكاة](https://raw.githubusercontent.com/mishkaah/.github/main/profile/assets/mishkaah-social-banner.png)
 
-[English](./README.md) · **العربية**
+[English](https://github.com/mishkaah/.github/blob/main/README.md) · **العربية**
 
 </div>
 
