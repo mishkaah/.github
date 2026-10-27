@@ -1,0 +1,55 @@
+name: "05. Biography, Entity, or Knowledge-Graph Linking Task"
+description: "Add or revise historical entity profiles, narrator chains (isnad), or inline entity links without altering base Arabic text."
+title: "[LINKING:GRAPH] "
+labels: ["type:entity-linking", "status:ready-for-revision"]
+body:
+  - type: dropdown
+    id: entity_domain
+    attributes:
+      label: Entity Domain / تصنيف الكيان
+      options:
+        - "identity (أعلام وتراجم)"
+        - "place (أماكن ومواضع جغرافية)"
+        - "group (قبائل وجماعات)"
+        - "event (وقائع وغزوات وأيام تاريخية)"
+        - "term (مصطلحات علمية وتأصيلية)"
+        - "object (أعيان وأشياء تاريخية)"
+        - "edges (روابط شبكية بين الكيانات والنصوص)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: target_path_globs
+    attributes:
+      label: Target Path Globs / مسارات الملفات المستهدفة
+      description: "e.g. entities/figures/*.json, entities/events/*.json, entities/edges.json. Required for PR Gatekeeper Gate B."
+    validations:
+      required: true
+
+  - type: input
+    id: source_urn
+    attributes:
+      label: Source Reference URN / معرّف المصدر المعتمد
+      description: "Source edition for biographical or historical data (e.g. Siyar A'lam al-Nubala, Al-Isabah)."
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope_description
+    attributes:
+      label: Scope & Profiles Covered / قائمة الكيانات ونطاق العمل
+      description: "Enumerate historical figures, events, or graph edges being created or enriched."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: linking_checklist
+    attributes:
+      label: Linking Invariant Checklist / الالتزامات المنهجية
+      options:
+        - label: "Strict Invariance Commitment: stripInlineRefs(annotated) === text_ar (Arabic base text is never altered)."
+          required: true
+        - label: "Entity identifiers strictly adhere to urn:mishkah:entity:... grammar."
+          required: true
+        - label: "All graph edges resolve bidirectionally with zero orphan targets."
+          required: true

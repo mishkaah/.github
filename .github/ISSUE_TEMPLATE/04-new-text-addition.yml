@@ -1,0 +1,66 @@
+name: "04. New Text Ingestion Task (Approved Source Required)"
+description: "Ingest a scheduled curriculum work from an already-verified source in SOURCES_MANIFEST.json."
+title: "[ADDITION:INGEST] "
+labels: ["type:new-addition", "status:ready-for-ingestion"]
+body:
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain / المجال العلمي
+      options:
+        - "quran (القرآن الكريم)"
+        - "tafseer (التفاسير)"
+        - "hadith (الحديث الشريف)"
+        - "adhkar (الأذكار المأثورة)"
+        - "matns (المتون العلمية)"
+        - "shuruh (شروح المتون)"
+        - "lexicons (المعاجم وغريب الألفاظ)"
+        - "entities (التراجم والسير)"
+    validations:
+      required: true
+
+  - type: input
+    id: work_title
+    attributes:
+      label: Work Title / عنوان المصنف الجديد
+      description: "e.g. Matn al-Bayquniyyah, Al-Tafsir al-Muyassar"
+    validations:
+      required: true
+
+  - type: input
+    id: source_urn
+    attributes:
+      label: Registered Source URN / معرّف المصدر المعتمد
+      description: "Must already exist with status 'verified' in corpus/SOURCES_MANIFEST.json"
+    validations:
+      required: true
+
+  - type: textarea
+    id: target_path_globs
+    attributes:
+      label: Target Path Globs / مسارات الملفات الجديدة
+      description: "Target JSON paths (e.g. matns/hadith/bayquniyyah.json). Required for PR Gatekeeper Gate B."
+    validations:
+      required: true
+
+  - type: textarea
+    id: schema_and_structure_notes
+    attributes:
+      label: Category Schema & Structure Notes / ملاحظات البنية التحتية
+      description: "Describe JSON category schema, segmentation approach, and primary keys."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: ingestion_checklist
+    attributes:
+      label: Ingestion Quality Checklist / ضوابط الإدراج
+      options:
+        - label: "Source is verified in SOURCES_MANIFEST.json and all source references resolve."
+          required: true
+        - label: "JSON files strictly match the category schema with zero unknown properties."
+          required: true
+        - label: "Pure classical Arabic with full diacritics (tashkeel)."
+          required: true
+        - label: "Automated test suites (meta-validator, markdown, corpus verifiers) pass cleanly."
+          required: true

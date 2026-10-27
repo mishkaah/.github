@@ -6,7 +6,7 @@
 
 </div>
 
-# Mishkaah Public Development Roadmap
+# Mishkaah Roadmap
 
 This roadmap outlines the planned milestones and verified additions for the Mishkaah Open Islamic Corpus. All work follows strict scholarly verification standards against accredited critical editions and official institutional portals.
 

@@ -31,11 +31,15 @@ Mishkaah does not accept arbitrary requests to add books:
 
 ### Submitting a report or proposal
 
-Once you have verified your reference against an approved source:
+Once you have verified your reference against an approved, accredited source:
 
-- **Documented textual discrepancy**: [Verified Textual or Reference Report Form](https://github.com/mishkaah/.github/issues/new?template=01-report-text-error.yml)
-- **Qualify an accredited source**: [Scholarly Source Qualification Form](https://github.com/mishkaah/.github/issues/new?template=02-propose-new-source.yml)
-- **Join the review team**: [Volunteer Reviewer Form](https://github.com/mishkaah/.github/issues/new?template=03-volunteer-or-contribute.yml)
+- **Documented textual discrepancy**: [Verified Textual Discrepancy Report](https://github.com/mishkaah/corpus/issues/new?template=01-verified-discrepancy-report.yml)
+- **Qualify an accredited source**: [Scholarly Source Qualification Proposal](https://github.com/mishkaah/corpus/issues/new?template=02-source-qualification.yml)
+- **Complete text revision task**: [Complete Text Revision Task Form](https://github.com/mishkaah/corpus/issues/new?template=03-complete-text-revision.yml)
+
+> **Corpus Discussions**: Proposing a new source or resolving complex textual or attribution questions should first be discussed in [Corpus Discussions](https://github.com/mishkaah/corpus/discussions) before a source is formally qualified and recorded in `SOURCES_MANIFEST.json`.
+>
+> *Note*: While `mishkaah/corpus` is in private preparation, these issue forms and discussions are accessible to invited reviewers and will open to all visitors as soon as initial verification completes.
 
 ---
 
@@ -47,4 +51,4 @@ Scholars and reviewers who wish to inspect texts, commentaries, and biographies 
 bun run studio
 ```
 
-Open `http://localhost:4100` to browse texts alongside commentaries, inspect narrator biographies, and check inline references in real time.
+Open `http://localhost:3333` to browse texts alongside commentaries, inspect narrator biographies, and check inline references in real time.

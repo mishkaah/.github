@@ -1,0 +1,104 @@
+name: "02. Qualify or Review a Scholarly Source"
+description: "Propose an accredited source (critical printed edition or official scholarly portal) for curriculum qualification, or flag a source issue."
+title: "[SOURCE:QUALIFICATION] "
+labels: ["type:source-qualification", "status:needs-discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 📚 Source Qualification Policy / سياسة اعتماد المصادر
+        **English**: We only ingest texts from accredited critical printed editions or officially verified scholarly portals. Before submitting, please check `corpus/SOURCES_MANIFEST.json` and consider opening a discussion thread in [Corpus Discussions](https://github.com/mishkaah/corpus/discussions).
+        
+        **العربية**: نعتمد حصراً الطبعات المحققة المعتمدة أو البوابات العلمية الرسمية الموثقة. يُرجى مراجعة سجل المصادر `corpus/SOURCES_MANIFEST.json` ويمكن طرح مقترح المصدر أولاً في [نقاشات المشروع](https://github.com/mishkaah/corpus/discussions).
+
+  - type: input
+    id: discussion_url
+    attributes:
+      label: GitHub Discussion Link / رابط النقاش في Discussions (اختياري)
+      description: "Link to discussion thread in mishkaah/corpus/discussions if previously discussed."
+    validations:
+      required: false
+
+  - type: input
+    id: source_name_ar
+    attributes:
+      label: Arabic Work Title / اسم الكتاب أو المصنف بالعربية
+      description: "e.g. سنن أبي داود، صحيح مسلم، التفسير الميسر"
+    validations:
+      required: true
+
+  - type: input
+    id: source_name_en
+    attributes:
+      label: English Transliterated Title / اسم المصنف بالإنجليزية
+      description: "e.g. Sunan Abi Dawud, Sahih Muslim, Al-Tafsir al-Muyassar"
+    validations:
+      required: true
+
+  - type: input
+    id: author_details
+    attributes:
+      label: Author & Death Year / المؤلف وتاريخ الوفاة والمحقق
+      description: "e.g. الإمام أبو داود السجستاني (ت 275 هـ)، تحقيق: شعيب الأرنؤوط"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: corpus_domain
+    attributes:
+      label: Corpus Domain / المجال العلمي
+      options:
+        - "quran (القرآن الكريم)"
+        - "tafseer (التفاسير)"
+        - "hadith (الحديث الشريف)"
+        - "adhkar (الأذكار المأثورة)"
+        - "matns (المتون العلمية)"
+        - "shuruh (شروح المتون)"
+        - "lexicons (المعاجم وغريب الألفاظ)"
+        - "entities (التراجم والسير)"
+        - "translations (الترجمات)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: edition_or_portal_details
+    attributes:
+      label: Edition or Official Portal Details / بيانات الطبعة أو البوابة العلمية
+      description: "Publisher, publication city, year, edition number, or official portal agency (e.g. King Fahd Complex, Shamela official, Awqaf portal)."
+    validations:
+      required: true
+
+  - type: textarea
+    id: scholarly_credibility
+    attributes:
+      label: Scholarly Credibility & Consensus / المكانة العلمية والتحقيقية
+      description: "Explain why this edition or portal is recognized as an authoritative, reliable reference by contemporary and classical scholars."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: copyright_status
+    attributes:
+      label: Legal & Copyright Status / الوضع القانوني وحقوق النشر
+      options:
+        - "Public Domain / Classical Heritage (تراث إسلامي عام)"
+        - "Official Open Access Portal / CC-BY / Waqf (بوابة وقفية أو مفتوحة رسمياً)"
+        - "Written Permission Granted (إذن كتابي صريح)"
+    validations:
+      required: true
+
+  - type: input
+    id: reference_url
+    attributes:
+      label: Catalog or Official Digital Reference URL / رابط الفهرس أو البوابة
+      description: "Official institutional catalog link or digital copy URL."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: certification
+    attributes:
+      label: Scholarly Certification / الإقرار المنهجي
+      options:
+        - label: "I certify that this proposal pertains strictly to an accredited critical edition or recognized institutional portal."
+          required: true

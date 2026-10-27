@@ -1,0 +1,44 @@
+name: "07. Documentation & Process Alignment Review Task"
+description: "Human review task to verify documentation accuracy, process alignment, links, and English/Arabic synchronization."
+title: "[DOCS:REVIEW] "
+labels: ["type:docs-review", "status:needs-human-review", "domain:docs"]
+body:
+  - type: input
+    id: target_repo_and_files
+    attributes:
+      label: Target Repository & Files / المستودع والملفات المستهدفة
+      description: "e.g. mishkaah/.github (profile/README*, docs/*), corpus/README.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: target_path_globs
+    attributes:
+      label: Target Path Globs / مسارات الملفات
+      description: "e.g. docs/**, *.md. Required for PR Gatekeeper Gate B."
+    validations:
+      required: true
+
+  - type: textarea
+    id: review_objectives
+    attributes:
+      label: Review Scope & Objectives / أهداف المراجعة والتدقيق
+      description: "Detail specific sections, policies, or workflows to review."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: review_checklist
+    attributes:
+      label: Human Review Verification Checklist / قائمة التحقق
+      options:
+        - label: "Factual accuracy verified against current codebase and tools."
+          required: true
+        - label: "Zero speculative phrasing, placeholder text, or AI fluff."
+          required: true
+        - label: "Process and governance alignment strictly preserved."
+          required: true
+        - label: "100% valid cross-repository links and anchors."
+          required: true
+        - label: "English and Arabic counterpart documents perfectly synchronized."
+          required: true
