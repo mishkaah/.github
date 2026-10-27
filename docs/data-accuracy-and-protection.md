@@ -47,7 +47,7 @@ Every contribution passes through automated checks before anyone can merge it:
 
 ### Mandatory second-person review
 
-Automated checks catch typos and broken links, but scholarly review confirms the content:
+Automated checks verify structure, links, and checksums, while scholarly review confirms every word against the printed edition:
 - The person who prepares a change cannot approve or merge it (`Reviewer != Author`).
 - Any correction to a classical text must reference the specific printed edition, volume, and page number.
 - A second reviewer checks the change against the physical book or high-resolution scan before approving.

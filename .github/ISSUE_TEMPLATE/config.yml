@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Mishkaah Discussions & Community
-    url: https://github.com/mishkaah/.github/discussions
-    about: Ask questions, discuss source editions, or engage with scholars, proofreaders, and engineers.
+  - name: Contribution & Verification Rules (Read Before Opening Any Issue)
+    url: https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md
+    about: Review our strict scholarly standards, proof requirements, and issue guidelines before submitting.

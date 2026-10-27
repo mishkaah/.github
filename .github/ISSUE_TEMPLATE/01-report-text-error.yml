@@ -1,15 +1,19 @@
-name: "01. Report a Text or Data Issue (Public Feedback)"
-description: "Report a typographical error, missing diacritic (tashkeel), or textual discrepancy in the corpus."
-title: "[FEEDBACK:ERROR] Fix: "
+name: "01. Verified Textual or Reference Report (Requires Source Proof)"
+description: "Submit a documented textual or reference discrepancy backed by citation to the approved printed edition. Unsubstantiated issues are closed immediately."
+title: "[DISCREPANCY:VERIFIED] "
 labels: ["type:public-feedback", "status:awaiting-triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        ### 📖 Report a Text or Data Issue / الإبلاغ عن خطأ في النص أو التشكيل
-        Thank you for helping safeguard the accuracy and integrity of the Mishkaah Open Islamic Corpus.
-        **No programming or Git knowledge is required.**
-        Every report is reviewed by scholarly editors against authentic printed editions before any correction is merged.
+        ### 📖 Verified Textual or Reference Report / استدراك نصي أو توثيقي معتمد
+        
+        > ⚠️ **MANDATORY POLICY / تنبيه إلزامي**:
+        > Before submitting this report, you **MUST** read our [Contribution & Verification Rules](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md).
+        > All texts in Mishkaah undergo rigorous multi-stage verification against approved printed editions.
+        > **Any issue opened without exact citation, solid verifiable proof, and page references from the approved printed edition will be rejected and closed immediately.**
+        >
+        > يجب قراءة [ضوابط المساهمة والتدقيق العلمي](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.ar.md) قبل فتح هذا البلاغ. أي استدراك يُفتح دون إحالة دقيقة للطبعة المعتمدة ودليل موثق (الجزء والصفحة أو صورة واضحة) سيُرفض ويُغلق فوراً.
 
   - type: dropdown
     id: domain
@@ -25,7 +29,6 @@ body:
         - "Lexicons & Arabic Dictionaries (المعاجم اللغوية)"
         - "Entities & Historical Persons (الأعلام والكيانات)"
         - "English Translations (الترجمات الإنجليزية)"
-        - "Other / General (أخرى)"
     validations:
       required: true
 
@@ -42,7 +45,7 @@ body:
     id: exact_reference
     attributes:
       label: "Exact Reference / Location (الموضع بدقة)"
-      description: "Surah and Ayah number, Hadith number, line number, or canonical URN if known."
+      description: "Surah and Ayah number, Hadith number, line number, or canonical URN."
       placeholder: "e.g. Surah Al-Baqarah 2:255, Hadith #42, Line 18"
     validations:
       required: true
@@ -51,8 +54,8 @@ body:
     id: current_text
     attributes:
       label: "Current Text in Mishkaah (النص الحالي كما يظهر)"
-      description: "Paste the text containing the error or discrepancy."
-      placeholder: "Paste the erroneous text here..."
+      description: "Paste the text containing the discrepancy."
+      placeholder: "Paste the current text here..."
     validations:
       required: true
 
@@ -60,7 +63,7 @@ body:
     id: suggested_correction
     attributes:
       label: "Suggested Correction with Tashkeel (النص المصوب مع التشكيل)"
-      description: "Provide the accurate classical Arabic reading with complete tashkeel."
+      description: "Provide the accurate reading with complete classical Arabic tashkeel."
       placeholder: "Write the corrected text with diacritics here..."
     validations:
       required: true
@@ -68,17 +71,25 @@ body:
   - type: textarea
     id: printed_reference
     attributes:
-      label: "Printed Edition / Scholarly Reference (طبعة الكتاب أو المصدر)"
-      description: "Specify the verified printed edition, publisher, muhaqqiq (editor), volume, and page number."
+      label: "Approved Printed Edition Citation (طبعة الكتاب المعتمدة والمحقق ورقم الصفحة)"
+      description: "Mandatory: publisher, editor (Muhaqqiq), volume, and page number from the approved printed edition."
       placeholder: "e.g. Dar Tuq al-Najah edition, edited by M. Zuhayr al-Nasir, Vol. 1, p. 12"
     validations:
       required: true
 
   - type: textarea
-    id: additional_context
+    id: verification_proof
     attributes:
-      label: "Additional Context or Manuscript Scans (ملاحظات أو صور إضافية)"
-      description: "Links to PDF scans, manuscript photos, or explanatory notes (optional)."
-      placeholder: "Optional notes or URLs..."
+      label: "Verifiable Proof / Scan URL (دليل التحقيق أو رابط النسخة المصورة)"
+      description: "Provide links to high-resolution manuscript/printed edition scans (e.g. Archive.org, Waqfeya)."
+      placeholder: "Links to PDF archive or volume scan..."
     validations:
       required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "Verification Confirmation (إقرار التدقيق والمصدر)"
+      options:
+        - label: "I confirm that I have read the Contribution & Verification Rules and that this discrepancy is verified directly against an approved critical printed edition."
+          required: true

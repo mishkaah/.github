@@ -1,58 +1,48 @@
-# Contributor Guide for Readers & Reviewers
+# Contribution & Verification Rules
 
 **English** · [العربية](./non-technical-contributing.ar.md)
 
 ---
 
-### You don't need to write code to help
+### High verification bar
 
-The most valuable contribution to Mishkaah is careful proofreading: checking classical texts against printed editions, catching missing diacritics (*tashkeel*), verifying narrator names in Hadith chains, and suggesting reliable printed editions.
-
-If you know Arabic, study Islamic texts, or simply spot a mistake while reading, you can contribute directly through simple forms without knowing Git or programming.
+Mishkaah welcomes contributions from scholars, researchers, and careful readers, but all contributions are governed by strict verification standards. Texts in this corpus have undergone multi-stage automated and scholarly verification against approved printed editions. Any remaining discrepancy is rare, subtle, and requires rigorous proof.
 
 ---
 
-### Reporting a mistake in a text
+### Mandatory proof policy
 
-If you spot a typo, a missing vowel mark, or an incorrect attribution:
-
-1. Open our [Report a text error form](https://github.com/mishkaah/.github/issues/new?template=01-report-text-error.yml).
-2. Tell us:
-   - Which book or science (e.g. *Hadith*, *Tafseer*, *Adhkar*).
-   - The exact location (Surah and verse, Hadith number, or page).
-   - What the text currently says and what it should say with full diacritics.
-   - The printed edition, editor (*Muhaqqiq*), volume, and page where your correction is confirmed.
-3. A reviewer will verify the change against the printed edition before merging it.
+To prevent defamation, attacks, or unsubstantiated claims:
+- **No casual or opinion-based issues**: Every report must provide verifiable proof from the approved critical printed edition.
+- **Required citation details**: You must specify the book, exact location (Surah and verse, Hadith number, or line), the approved printed edition, editor (*Muhaqqiq*), publisher, volume, and page number (or high-resolution scan).
+- **Immediate rejection**: Any issue opened without solid, verifiable proof from an approved printed edition will be rejected and closed immediately.
 
 ---
 
-### Suggesting a printed edition
+### Curated scope: no arbitrary book additions
 
-Before we add a new classical book or commentary, we verify the quality of the printed critical edition:
-
-1. Open our [Suggest a printed source form](https://github.com/mishkaah/.github/issues/new?template=02-propose-new-source.yml).
-2. Share the book title, author, editor (*Muhaqqiq*), publishing house, and publication year.
-3. Once approved, the book is added to our sources registry so contributors can begin formatting it.
+We do not accept casual requests to add new books:
+- Works are admitted strictly according to the planned curriculum and scholarly milestones.
+- Proposing a new source requires qualifying a critical printed edition with complete documentation of manuscript witnesses, editor pedigree, and open licensing.
 
 ---
 
-### Browsing texts in Mishkaah Studio
+### Submitting a verified report or proposal
 
-If you prefer viewing and editing texts in a visual interface rather than looking at raw files, you can run the local web studio:
+Once you have reviewed the rules above and prepared your printed citation:
+
+- **Documented textual discrepancy**: [Verified Textual or Reference Report Form](https://github.com/mishkaah/.github/issues/new?template=01-report-text-error.yml)
+- **Qualify a critical printed edition**: [Scholarly Source Qualification Form](https://github.com/mishkaah/.github/issues/new?template=02-propose-new-source.yml)
+- **Join as a scholarly reviewer**: [Volunteer Reviewer Form](https://github.com/mishkaah/.github/issues/new?template=03-volunteer-or-contribute.yml)
+
+---
+
+### Verifying texts with Mishkaah Studio
+
+Qualified reviewers who wish to inspect texts, narrator chains, and connected commentaries visually can launch the local web studio:
 
 ```bash
 bun run studio
 ```
 
-Open `http://localhost:4100` in your browser to:
-- Browse all Quran Surahs, Hadith collections, and Matns with their translations and commentaries.
-- Inspect biographies of Companions and scholars.
-- Highlight names in the text to attach person or place links visually, with live checks that make sure the original Arabic text isn't altered.
-
----
-
-### Joining as a regular reviewer
-
-If you would like to help review incoming reports and text submissions regularly:
-- Fill out the [Join as a reviewer form](https://github.com/mishkaah/.github/issues/new?template=03-volunteer-or-contribute.yml).
-- Let us know your areas of study (e.g. *Hadith*, *Fiqh*, *Arabic grammar*) and your availability.
+Open `http://localhost:4100` to browse texts side-by-side with commentaries, inspect biographies, and verify inline annotations against the original Arabic text in real time.

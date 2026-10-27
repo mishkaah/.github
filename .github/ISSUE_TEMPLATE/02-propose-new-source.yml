@@ -1,14 +1,20 @@
-name: "02. Propose a New Scholarly Source"
-description: "Propose and qualify an authentic printed critical edition, manuscript, or classical work for acquisition into Mishkaah."
-title: "[SOURCE:PROPOSAL] Acquire: "
+name: "02. Propose a New Scholarly Source (Formal Qualification)"
+description: "Propose a critical printed edition for curriculum qualification. Casual book suggestions are rejected immediately."
+title: "[SOURCE:QUALIFICATION] "
 labels: ["type:source-qualification", "status:needs-maintainer-review"]
 body:
   - type: markdown
     attributes:
       value: |
-        ### 📚 Scholarly Source Qualification Protocol / مقترح تأهيل مصدر مطبوع
-        Before any new book, manuscript, or classical text is ingested into Mishkaah, its scholarly pedigree, manuscript witnesses, printed edition editor (*Muhaqqiq*), and licensing status must be reviewed and registered in `corpus/SOURCES_MANIFEST.json`.
-        **Issue Title Format**: `[SOURCE:PROPOSAL] Acquire: <Work Title in Arabic or English>`
+        ### 📚 Scholarly Source Qualification / مقترح تأهيل مصدر مطبوع
+        
+        > ⚠️ **CURATED CURRICULUM POLICY / تنبيه حول السياسة المنهجية**:
+        > Mishkaah does **NOT** accept casual book additions or arbitrary title requests.
+        > Works are scheduled strictly according to our planned scholarly curriculum.
+        > This form is strictly for qualifying an authoritative critical printed edition with complete documentation of editor (*Muhaqqiq*), publishing house, manuscript witnesses, and public domain/open licensing.
+        > **Unsubstantiated or casual book suggestions will be rejected and closed immediately.**
+        >
+        > مشروع مشكاة ليس مستودعاً مفتوحاً لاقتراح الكتب كيفما اتفق؛ بل تُدرج المصنفات وفق خطة منهجية معتمدة. هذا النموذج مخصص حصراً لتأهيل الطبعات المحققة الموثوقة مع بيان نسخها الخطية وجهود محققها وحقوق نشرها. أي اقتراح عشوائي سيُغلق فوراً.
 
   - type: input
     id: source_name_ar
@@ -54,7 +60,7 @@ body:
   - type: textarea
     id: publication_details
     attributes:
-      label: "Printed Critical Edition Details (بيانات الطبعة المعتمدة والمحقق)"
+      label: "Critical Printed Edition Details (بيانات الطبعة المعتمدة والمحقق)"
       description: "Editor(s) (Muhaqqiq), Publisher (Dar), City, Publication Year, Number of Volumes, and ISBN."
       placeholder: "Edited by Muhammad Zuhayr ibn Nasir al-Nasir, Published by Dar Tuq al-Najah (Beirut), 1422 AH / 2001 CE, 9 Volumes."
     validations:
@@ -63,7 +69,7 @@ body:
   - type: textarea
     id: authentication_and_manuscripts
     attributes:
-      label: "Manuscript Witnesses & Scholarly Authentication (النسخ الخطية وتوثيق الطبعة)"
+      label: "Manuscript Witnesses & Academic Pedigree (النسخ الخطية وتوثيق الطبعة)"
       description: "Describe historical manuscript witnesses, critical apparatus, or scholarly consensus verifying this edition."
       placeholder: "Based on the Sultaniyyah / Yuniniyyah recension compared against authenticated early manuscript branches..."
     validations:
@@ -84,8 +90,16 @@ body:
   - type: textarea
     id: sample_text_or_scan
     attributes:
-      label: "Sample Text or Link to Digitized Scan (عينة نصية أو رابط النسخة المصورة)"
-      description: "Provide sample text lines or link to digital archive / PDF scan (e.g. Archive.org, Waqfeya)."
+      label: "Link to Digitized Scan or Archive (رابط النسخة المصورة أو الأرشيف)"
+      description: "Provide a link to digital archive / PDF scan (e.g. Archive.org, Waqfeya)."
       placeholder: "Links to PDF archive or volume scan..."
     validations:
-      required: false
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "Curriculum & Qualification Confirmation (إقرار المنهجية والتأهيل)"
+      options:
+        - label: "I confirm that this is a fully documented critical printed edition with complete publisher, editor, and manuscript information, and not an arbitrary book request."
+          required: true

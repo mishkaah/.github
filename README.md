@@ -14,14 +14,14 @@ We don't author or generate any religious content. We collect verified texts fro
 
 ### Where to go from here
 
-- **Want to know how we verify the data?**
-  Read [How We Check and Protect the Texts](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.md) — where our texts come from, how the Quran text is locked with SHA-256 checksums so not a single letter can be changed, and how every edit requires both automated checks and review by a second person.
+- **How we verify and protect the data**
+  Read [How We Check and Protect the Texts](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.md) — where our texts come from, how the Quran text is locked with SHA-256 checksums so not a single letter can be changed, and how every change requires both automated checks and review by a second person.
 
-- **Spotted a mistake or want to help with reviewing texts? (No coding needed)**
-  Read the [Contributor Guide for Readers & Reviewers](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md), or open a form directly:
-  [Report a text error](https://github.com/mishkaah/.github/issues/new?template=01-report-text-error.yml) · [Suggest a printed source](https://github.com/mishkaah/.github/issues/new?template=02-propose-new-source.yml) · [Join as a reviewer](https://github.com/mishkaah/.github/issues/new?template=03-volunteer-or-contribute.yml)
+- **Contributing & reporting rules (read before opening any issue)**
+  Contributions are welcome, but they are governed by strict verification standards — we do not accept casual additions or arbitrary book requests. Every text in Mishkaah undergoes multi-stage verification against approved printed editions, so any remaining discrepancy would be rare and subtle.
+  Before proposing a contribution or reporting an issue, you **must** read the [Contribution & Verification Rules](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md). Any issue opened without solid, verifiable proof and an exact reference (printed edition, volume, and page) will be rejected and closed immediately.
 
-- **Looking for the code, schemas, or data format?**
+- **Code, schemas, and data format**
   Read the [Technical Overview](https://github.com/mishkaah/.github/blob/main/docs/technical-architecture.md) for how the JSON corpus, TypeScript/Bun validation scripts, URN links, and offline SQLite search work.
 
 ---
@@ -35,6 +35,6 @@ We don't author or generate any religious content. We collect verified texts fro
 | [`mishkaah/app`](https://github.com/mishkaah/app) | Web and mobile reading apps | Private (in development) |
 | [`mishkaah/sdk`](https://github.com/mishkaah/sdk) | TypeScript utilities (`@mishkaah/sdk`) for working with Mishkaah URNs and inline links | Private (in development) |
 | [`mishkaah/brand`](https://github.com/mishkaah/brand) | Logos, mobile app icons, and color/typography tokens | Private (in development) |
-| [`mishkaah/.github`](https://github.com/mishkaah/.github) | Public overview, documentation, and issue forms | **Public** |
+| [`mishkaah/.github`](https://github.com/mishkaah/.github) | Public overview, documentation, and verification rules | **Public** |
 
-> We are finishing initial data checks before opening `corpus` and `core` publicly. In the meantime, all documentation and feedback forms in [`mishkaah/.github`](https://github.com/mishkaah/.github) are open.
+> We are completing our internal verification before opening `corpus` and `core` publicly. In the meantime, all documentation and contribution rules in [`mishkaah/.github`](https://github.com/mishkaah/.github) are available here.
