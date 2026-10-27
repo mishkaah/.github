@@ -1,0 +1,72 @@
+name: "03. Volunteer to Review or Contribute"
+description: "Join Mishkaah as a scholarly reviewer, Arabic proofreader, translator, or software engineer."
+title: "[VOLUNTEER] Contribution: "
+labels: ["type:volunteer", "status:awaiting-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🤝 Join the Mishkaah Scholarly & Engineering Circle
+        Thank you for your dedication to preserving, structuring, and serving Islamic heritage.
+        Mishkaah is an open scholarly endowment (*Waqf*), built collaboratively by qualified scholars, students of knowledge, and engineers worldwide.
+
+  - type: dropdown
+    id: contribution_track
+    attributes:
+      label: "Primary Contribution Track (مسار المساهمة الرئيسي)"
+      description: "Select how you would like to participate."
+      options:
+        - "Scholarly Reviewer / Tahqeeq (Verifying text against printed editions)"
+        - "Arabic Proofreader & Vocalizer (Checking Tashkeel, syntax, and matns)"
+        - "Translator & Localization Reviewer (English & global language overlays)"
+        - "Software Engineer (TypeScript, Bun, SQLite, Zod, Tooling)"
+        - "Mobile / Web App Developer (Flutter, React, offline databases)"
+        - "UI/UX & Arabic Typography Designer (Visual design, calligraphic assets)"
+        - "Data Scientist / NLP Researcher (Arabic corpus analysis, search)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: background_and_expertise
+    attributes:
+      label: "Background, Scholarly Credentials, or Technical Experience"
+      description: "Briefly share your background, academic degrees, traditional Ijazat/studies, or technical portfolio / GitHub profile."
+      placeholder: "e.g. Graduate of Islamic Studies (Hadith / Usul), or 5 years experience in TypeScript & systems engineering..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: focus_areas
+    attributes:
+      label: "Areas of Islamic Knowledge or Technical Focus"
+      options:
+        - label: "Holy Quran & Qira'at (القرآن الكريم والقراءات)"
+        - label: "Hadith Studies & Asanid (الحديث الشريف وعلومه والأسانيد)"
+        - label: "Tafseer & Quranic Exegesis (التفسير وعلوم القرآن)"
+        - label: "Scientific Matns & Shuruh: Fiqh, Aqeedah, Usul, Tajweed (المتون العلمية والشروح)"
+        - label: "Classical Arabic Lexicography & Morphology (المعاجم واللغة العربية)"
+        - label: "Biographical Figures & Historical Geography (تراجم الأعلام والتاريخ)"
+        - label: "TypeScript, Bun, SQLite & Data Engineering"
+        - label: "Flutter Mobile / Web App Development"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: time_commitment
+    attributes:
+      label: "Estimated Availability"
+      options:
+        - "1 - 3 hours per week (Occasional review of specific texts/issues)"
+        - "3 - 7 hours per week (Regular review, translation, or feature work)"
+        - "7+ hours per week (Active core contributor)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: "Additional Notes or Questions"
+      description: "Any specific books, collections, or tooling tasks you are passionate about helping with."
+      placeholder: "Optional notes..."
+    validations:
+      required: false

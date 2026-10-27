@@ -1,0 +1,84 @@
+name: "01. Report a Text or Data Issue (Public Feedback)"
+description: "Report a typographical error, missing diacritic (tashkeel), or textual discrepancy in the corpus."
+title: "[FEEDBACK:ERROR] Fix: "
+labels: ["type:public-feedback", "status:awaiting-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 📖 Report a Text or Data Issue / الإبلاغ عن خطأ في النص أو التشكيل
+        Thank you for helping safeguard the accuracy and integrity of the Mishkaah Open Islamic Corpus.
+        **No programming or Git knowledge is required.**
+        Every report is reviewed by scholarly editors against authentic printed editions before any correction is merged.
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: "Domain / Classical Science (المجال)"
+      description: "Select the Islamic science or corpus category."
+      options:
+        - "Quran (القرآن الكريم)"
+        - "Hadith & Sunnah (الحديث الشريف)"
+        - "Tafseer & Quranic Sciences (التفسير وعلوم القرآن)"
+        - "Mutun & Shuruh (المتون العلمية والشروح)"
+        - "Adhkar & Supplications (الأذكار والأدعية)"
+        - "Lexicons & Arabic Dictionaries (المعاجم اللغوية)"
+        - "Entities & Historical Persons (الأعلام والكيانات)"
+        - "English Translations (الترجمات الإنجليزية)"
+        - "Other / General (أخرى)"
+    validations:
+      required: true
+
+  - type: input
+    id: source_name
+    attributes:
+      label: "Book, Matn, or Source Title (اسم الكتاب أو المتن)"
+      description: "The name of the work where the issue is found."
+      placeholder: "e.g. Sahih al-Bukhari, Al-Muqaddimah al-Jazariyyah, Tafseer al-Tabari"
+    validations:
+      required: true
+
+  - type: input
+    id: exact_reference
+    attributes:
+      label: "Exact Reference / Location (الموضع بدقة)"
+      description: "Surah and Ayah number, Hadith number, line number, or canonical URN if known."
+      placeholder: "e.g. Surah Al-Baqarah 2:255, Hadith #42, Line 18"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_text
+    attributes:
+      label: "Current Text in Mishkaah (النص الحالي كما يظهر)"
+      description: "Paste the text containing the error or discrepancy."
+      placeholder: "Paste the erroneous text here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested_correction
+    attributes:
+      label: "Suggested Correction with Tashkeel (النص المصوب مع التشكيل)"
+      description: "Provide the accurate classical Arabic reading with complete tashkeel."
+      placeholder: "Write the corrected text with diacritics here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: printed_reference
+    attributes:
+      label: "Printed Edition / Scholarly Reference (طبعة الكتاب أو المصدر)"
+      description: "Specify the verified printed edition, publisher, muhaqqiq (editor), volume, and page number."
+      placeholder: "e.g. Dar Tuq al-Najah edition, edited by M. Zuhayr al-Nasir, Vol. 1, p. 12"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: "Additional Context or Manuscript Scans (ملاحظات أو صور إضافية)"
+      description: "Links to PDF scans, manuscript photos, or explanatory notes (optional)."
+      placeholder: "Optional notes or URLs..."
+    validations:
+      required: false
