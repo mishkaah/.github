@@ -17,7 +17,7 @@
 ### من أين تبدأ؟
 
 - **الخطة المنهجية**
-  اطّلع على [خطة مشروع مشكاة](https://github.com/mishkaah/.github/blob/main/docs/roadmap.ar.md) لمتابعة المراحل المنجزة والمجدولة.
+  تابع المراحل المنجزة والمجدولة زمنياً عبر [الخط الزمني العام لمشروع مشكاة](https://github.com/orgs/mishkaah/projects/3/views/2)، أو راجع وثيقة [خطة مشروع مشكاة](https://github.com/mishkaah/.github/blob/main/docs/roadmap.ar.md) التفصيلية.
 
 - **كيف نتحقق من صحة النصوص ونحميها**
   اقرأ [كيف نراجع البيانات ونحمي النصوص](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.ar.md) للتعرف على كيفية اعتماد المصادر، وكيف يُحفظ نص القرآن الكريم من أي تغيير، وكيف يمر كل تعديل بفحص آلي ومراجعة مستقلة قبل اعتماده.

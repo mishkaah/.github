@@ -18,7 +18,7 @@ We do not author or generate any religious content. We collect verified texts fr
 ### Where to go from here
 
 - **Roadmap**
-  Read the [Mishkaah Roadmap](https://github.com/mishkaah/.github/blob/main/docs/roadmap.md) to track active and planned milestones.
+  Track active milestones and progress across our 6-month horizons on the [Live Public Roadmap Timeline](https://github.com/orgs/mishkaah/projects/3/views/2), or consult the full [Mishkaah Roadmap Specification](https://github.com/mishkaah/.github/blob/main/docs/roadmap.md).
 
 - **How we verify and protect the texts**
   Read [How We Check and Protect the Texts](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.md) to learn where our materials come from, how the text of the Holy Quran is sealed against any alteration, and how every change goes through automated checks and independent review before it is accepted.
