@@ -1,0 +1,66 @@
+name: "03. Complete Text Revision & Collation Task"
+description: "Scoped milestone task for complete collation and verification of an existing text in the corpus."
+title: "[REVISION:COMPLETE] "
+labels: ["type:complete-revision", "status:ready-for-revision"]
+body:
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain / المجال العلمي
+      options:
+        - "quran (القرآن الكريم)"
+        - "tafseer (التفاسير)"
+        - "hadith (الحديث الشريف)"
+        - "adhkar (الأذكار المأثورة)"
+        - "matns (المتون العلمية)"
+        - "shuruh (شروح المتون)"
+        - "lexicons (المعاجم وغريب الألفاظ)"
+        - "entities (التراجم والسير)"
+    validations:
+      required: true
+
+  - type: input
+    id: work_title
+    attributes:
+      label: Work Title / عنوان المصنف
+      description: "e.g. Sahih al-Bukhari, Tafseer al-Sa'di, Matn al-Aqeedah al-Tahawiyyah"
+    validations:
+      required: true
+
+  - type: input
+    id: source_urn
+    attributes:
+      label: Registered Source URN / معرّف المصدر المعتمد
+      description: "URN registered in SOURCES_MANIFEST.json (e.g. urn:mishkah:source:hadith:bukhari:sultaniyya)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: target_path_globs
+    attributes:
+      label: Target Path Globs / مسارات الملفات المستهدفة
+      description: "Comma-separated or newline list of file paths/globs (e.g. hadith/bukhari/*.json). Required for PR Gatekeeper Gate B."
+    validations:
+      required: true
+
+  - type: textarea
+    id: revision_scope
+    attributes:
+      label: Revision Scope & Boundaries / نطاق المراجعة والتدقيق
+      description: "Define exact chapters, surahs, hadiths, or line numbering range included in this task."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: collation_checklist
+    attributes:
+      label: Collation Verification Checklist / قائمة التحقق
+      options:
+        - label: "Verify full classical Arabic tashkeel against accredited critical printed edition."
+          required: true
+        - label: "Ensure strict schema conformity with zero unexpected properties."
+          required: true
+        - label: "Validate URN grammar and sequential integrity across all items."
+          required: true
+        - label: "Independent scholarly review and signoff required before merge."
+          required: true

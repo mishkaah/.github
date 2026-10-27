@@ -14,8 +14,8 @@ We do not author or generate any religious content. We collect verified texts fr
 
 ### Where to go from here
 
-- **Public Roadmap**
-  Read the [Development & Verification Roadmap](https://github.com/mishkaah/.github/blob/main/docs/roadmap.md) to track active and planned milestones.
+- **Roadmap**
+  Read the [Mishkaah Roadmap](https://github.com/mishkaah/.github/blob/main/docs/roadmap.md) to track active and planned milestones.
 
 - **How we verify and protect the texts**
   Read [How We Check and Protect the Texts](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.md) to learn where our materials come from, how the text of the Holy Quran is sealed against any alteration, and how every change goes through automated checks and independent review before it is accepted.
@@ -40,4 +40,4 @@ We do not author or generate any religious content. We collect verified texts fr
 | [`mishkaah/brand`](https://github.com/mishkaah/brand) | Logos, app icons, and visual identity assets | Private (in development) |
 | [`mishkaah/.github`](https://github.com/mishkaah/.github) | Public overview, guides, and corpus contribution rules | **Public** |
 
-> We are completing our initial verification before opening `corpus` and `core` publicly. In the meantime, all guides and corpus contribution forms in [`mishkaah/.github`](https://github.com/mishkaah/.github) are open.
+> We are completing our initial verification before opening `corpus` and `core` publicly. In the meantime, all guides and documentation in [`mishkaah/.github`](https://github.com/mishkaah/.github) are open, and invited reviewers can access [`mishkaah/corpus`](https://github.com/mishkaah/corpus).

@@ -15,7 +15,7 @@
 ### من أين تبدأ؟
 
 - **الخطة المنهجية**
-  اطّلع على [خطة التطوير والتدقيق](https://github.com/mishkaah/.github/blob/main/docs/roadmap.ar.md) لمتابعة المراحل المنجزة والمجدولة.
+  اطّلع على [خطة مشروع مشكاة](https://github.com/mishkaah/.github/blob/main/docs/roadmap.ar.md) لمتابعة المراحل المنجزة والمجدولة.
 
 - **كيف نتحقق من صحة النصوص ونحميها**
   اقرأ [كيف نراجع البيانات ونحمي النصوص](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.ar.md) للتعرف على كيفية اعتماد المصادر، وكيف يُحفظ نص القرآن الكريم من أي تغيير، وكيف يمر كل تعديل بفحص آلي ومراجعة مستقلة قبل اعتماده.
@@ -40,4 +40,4 @@
 | [`mishkaah/brand`](https://github.com/mishkaah/brand) | الشعارات وأيقونات التطبيقات وعناصر الهوية البصرية | خاص (قيد التطوير) |
 | [`mishkaah/.github`](https://github.com/mishkaah/.github) | التعريف بالمشروع والأدلة العامة وضوابط المساهمة في المحتوى | **عام (Public)** |
 
-> نعمل حالياً على استكمال المراجعة الأولية قبل فتح مستودعي `corpus` و`core` للعموم، بينما تظل جميع الأدلة ونماذج المساهمة في المحتوى متاحة هنا في [`mishkaah/.github`](https://github.com/mishkaah/.github).
+> نعمل حالياً على استكمال المراجعة الأولية قبل فتح مستودعي `corpus` و`core` للعموم، بينما تظل جميع الأدلة والتوثيقات متاحة هنا في [`mishkaah/.github`](https://github.com/mishkaah/.github)، ويتاح للمراجعين المدعوين الوصول إلى [`mishkaah/corpus`](https://github.com/mishkaah/corpus).

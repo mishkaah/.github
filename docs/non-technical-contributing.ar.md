@@ -33,9 +33,13 @@
 
 بعد التثبت من النص والرجوع إلى المصدر المعتمد:
 
-- **استدراك موثق في نص أو عزو**: [نموذج الإبلاغ عن استدراك موثق](https://github.com/mishkaah/.github/issues/new?template=01-report-text-error.yml)
-- **تأهيل مصدر علمي معتمد**: [نموذج تأهيل مصدر علمي](https://github.com/mishkaah/.github/issues/new?template=02-propose-new-source.yml)
-- **الانضمام لفريق المراجعة العلمية**: [نموذج طلب التطوع في المراجعة](https://github.com/mishkaah/.github/issues/new?template=03-volunteer-or-contribute.yml)
+- **استدراك موثق في نص أو عزو**: [نموذج الإبلاغ عن استدراك موثق](https://github.com/mishkaah/corpus/issues/new?template=01-verified-discrepancy-report.yml)
+- **تأهيل مصدر علمي معتمد**: [نموذج مقترح تأهيل مصدر علمي](https://github.com/mishkaah/corpus/issues/new?template=02-source-qualification.yml)
+- **مهمة تصويب نص مكتملة**: [نموذج مهمة تصويب نص تراثي](https://github.com/mishkaah/corpus/issues/new?template=03-complete-text-revision.yml)
+
+> **حلقات نقاش المحتوى (Corpus Discussions)**: اقتراح المصادر الجديدة أو مناقشة المسائل التوثيقية والتحقيقية الدقيقة يُطرح أولاً في [حلقات نقاش المحتوى](https://github.com/mishkaah/corpus/discussions) قبل تأهيل المصدر رسمياً وإدراجه في سجل المصادر المعتمدة `SOURCES_MANIFEST.json`.
+>
+> *تنبيه*: نظراً لأن مستودع `mishkaah/corpus` يمر بمرحلة التدقيق والمراجعة الأولية، فإن هذه النماذج وحلقات النقاش متاحة حالياً للمراجعين المدعوين، وستُفتح لجميع الزوار فور اكتمال المراجعة الأولية.
 
 ---
 
@@ -47,4 +51,4 @@
 bun run studio
 ```
 
-افتح الرابط `http://localhost:4100` في متصفحك لاستعراض النصوص جنباً إلى جنب مع شروحها وتراجم رواتها، وفحص الروابط التفاعلية مع التحقق اللحظي من سلامة النص الأصلي.
+افتح الرابط `http://localhost:3333` في متصفحك لاستعراض النصوص جنباً إلى جنب مع شروحها وتراجم رواتها، وفحص الروابط التفاعلية مع التحقق اللحظي من سلامة النص الأصلي.
