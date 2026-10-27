@@ -1,6 +1,8 @@
 <div align="center">
 
-![مشكاة](https://raw.githubusercontent.com/mishkaah/.github/main/profile/assets/mishkaah-social-banner.png)
+![مشكاة](https://raw.githubusercontent.com/mishkaah/brand/main/animations/svg/mishkaah-hero-banner-animated.svg)
+
+### ***تُرَاثٌ مُحَقَّق.. وَمَعْرِفَةٌ مُتَرَابِطَة***
 
 [English](https://github.com/mishkaah/.github/blob/main/README.md) · **العربية**
 
@@ -24,6 +26,9 @@
   نرحب بالمقترحات الجادة وبالمساهمة في مراجعة نصوص المحتوى والعناية بها، ويُستحسن فيمن يشارك في المراجعة والتدقيق أن يكون ذا خلفية شرعية أو لغوية. ولأن جميع المواد تمر بمراحل تحقق متتابعة، فإن وجود أي خلل يظل أمراً نادراً.
   قبل فتح أي بلاغ أو تقديم مساهمة، يُرجى قراءة [دليل المساهمة والتدقيق](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.ar.md). يجب أن يكون كل بلاغ مدعوماً بدليل واضح وإحالة دقيقة إلى مصدر معتمد؛ أما البلاغات العشوائية أو غير الموثقة فتُغلق فوراً.
 
+- **الهوية البصرية والأصول الرسمية**
+  اطّلع على مستودع [`mishkaah/brand`](https://github.com/mishkaah/brand) لتحميل الشعارات الرسمية وأيقونات التطبيقات المتكيفة ودليل الهوية البصرية.
+
 - **للمطورين**
   اقرأ [النظرة التقنية العامة](https://github.com/mishkaah/.github/blob/main/docs/technical-architecture.ar.md) للاطلاع على بنية المستودعات وتنسيق البيانات وأدوات الفحص.
 
@@ -37,7 +42,7 @@
 | [`mishkaah/core`](https://github.com/mishkaah/core) | أدوات الفحص الداخلية وبناء قاعدة بيانات البحث | خاص (قيد المراجعة) |
 | [`mishkaah/app`](https://github.com/mishkaah/app) | تطبيقات القراءة للويب والهواتف | خاص (قيد التطوير) |
 | [`mishkaah/sdk`](https://github.com/mishkaah/sdk) | أدوات للمطورين للتعامل مع نصوص مشكاة وروابطها | خاص (قيد التطوير) |
-| [`mishkaah/brand`](https://github.com/mishkaah/brand) | الشعارات وأيقونات التطبيقات وعناصر الهوية البصرية | خاص (قيد التطوير) |
+| [`mishkaah/brand`](https://github.com/mishkaah/brand) | الشعارات الرسمية وأيقونات التطبيقات المتكيفة وأصول الهوية البصرية | **عام (Public)** |
 | [`mishkaah/.github`](https://github.com/mishkaah/.github) | التعريف بالمشروع والأدلة العامة وضوابط المساهمة في المحتوى | **عام (Public)** |
 
 > نعمل حالياً على استكمال المراجعة الأولية قبل فتح مستودعي `corpus` و`core` للعموم، بينما تظل جميع الأدلة والتوثيقات متاحة هنا في [`mishkaah/.github`](https://github.com/mishkaah/.github)، ويتاح للمراجعين المدعوين الوصول إلى [`mishkaah/corpus`](https://github.com/mishkaah/corpus).

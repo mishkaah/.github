@@ -1,6 +1,9 @@
 <div align="center">
 
-![Mishkaah](https://raw.githubusercontent.com/mishkaah/.github/main/profile/assets/mishkaah-social-banner.png)
+![Mishkaah](https://raw.githubusercontent.com/mishkaah/brand/main/animations/svg/mishkaah-hero-banner-animated.svg)
+
+### ***Verified Islamic Heritage. Connected Knowledge.***
+*(تُرَاثٌ مُحَقَّق.. وَمَعْرِفَةٌ مُتَرَابِطَة)*
 
 **English** · [العربية](https://github.com/mishkaah/.github/blob/main/README.ar.md)
 
@@ -24,6 +27,9 @@ We do not author or generate any religious content. We collect verified texts fr
   We welcome thoughtful suggestions and help in maintaining the corpus, and having a background in Islamic studies or Arabic sciences is especially valuable for reviewing texts. Because all materials go through careful multi-stage verification, any remaining issue should be rare.
   Before opening any issue or contributing, please read the [Contribution & Verification Guide](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md). Every report must be backed by clear proof and an exact reference to a trusted source; random or unsubstantiated issues are closed immediately.
 
+- **Brand & visual identity**
+  Explore [`mishkaah/brand`](https://github.com/mishkaah/brand) for official logos, adaptive app icons, brand guidelines, and vector assets.
+
 - **For developers**
   Read the [Technical Overview](https://github.com/mishkaah/.github/blob/main/docs/technical-architecture.md) for details on the repository structure, data format, and verification tools.
 
@@ -37,7 +43,7 @@ We do not author or generate any religious content. We collect verified texts fr
 | [`mishkaah/core`](https://github.com/mishkaah/core) | Internal verification tools and search database builder | Private (in review) |
 | [`mishkaah/app`](https://github.com/mishkaah/app) | Web and mobile reading applications | Private (in development) |
 | [`mishkaah/sdk`](https://github.com/mishkaah/sdk) | Developer utilities for working with Mishkaah texts and references | Private (in development) |
-| [`mishkaah/brand`](https://github.com/mishkaah/brand) | Logos, app icons, and visual identity assets | Private (in development) |
+| [`mishkaah/brand`](https://github.com/mishkaah/brand) | Official logos, adaptive app icons, and brand identity assets | **Public** |
 | [`mishkaah/.github`](https://github.com/mishkaah/.github) | Public overview, guides, and corpus contribution rules | **Public** |
 
 > We are completing our initial verification before opening `corpus` and `core` publicly. In the meantime, all guides and documentation in [`mishkaah/.github`](https://github.com/mishkaah/.github) are open, and invited reviewers can access [`mishkaah/corpus`](https://github.com/mishkaah/corpus).
