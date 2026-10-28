@@ -85,8 +85,8 @@ Zone 3 tools provide advisory insights without ever writing to corpus files:
 To guarantee accessibility for scholars while protecting confidentiality:
 
 1. **Dual Provisioning (BYOK + Organization Fallback Key)**:
-   - **Bring Your Own Key (BYOK)**: Reviewers can configure personal API keys (`Google Gemini`, `OpenAI`, or `Anthropic Claude`) stored exclusively in their own browser's encrypted local storage (`localStorage`). Keys are never sent to external servers or committed to Git.
-   - **Organization Fallback Key**: Verified members of the Mishkaah Review Team (`mishkaah/corpus` collaborators) can seamlessly utilize the organization's sponsored API gateway with zero personal setup.
+   - **Bring Your Own Key (BYOK)**: Reviewers can configure personal API keys (`Z.ai GLM Coding Plan (Flash)` as primary/default, `Google Gemini`, `OpenAI`, or `Anthropic Claude`) stored exclusively in their own browser's encrypted local storage (`localStorage`). Keys are never sent to external servers or committed to Git.
+   - **Organization Fallback Key**: Verified members of the Mishkaah Review Team (`mishkaah/corpus` collaborators) can seamlessly utilize the organization's sponsored API gateway with zero personal setup. The organization fallback gateway currently routes requests via the high-throughput Z.ai GLM Coding Plan Flash endpoint (`https://api.z.ai/api/coding/paas/v4/chat/completions`).
 2. **Deterministic Sampling**:
    - All prompts run at `temperature: 0` with top-p minimization to ensure reproducible, non-speculative outputs.
 3. **Zero Retention Policy**:

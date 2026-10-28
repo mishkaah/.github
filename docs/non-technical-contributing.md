@@ -28,6 +28,7 @@ To maintain the highest level of textual integrity and protect sacred heritage:
    - Textual discrepancies, ambiguous readings, or questionable sources are discussed first in **[Corpus Discussions](https://github.com/mishkaah/corpus/discussions)** so the team can reach scholarly consensus before merging.
 3. **Mandatory Accredited Proof**:
    - Every submission must cite an exact approved source (Publisher, Editor, Volume, and Page). Submissions lacking proof are closed immediately (`status:rejected-no-proof`).
+   - **Tangible & Publicly Provable Requirement**: Sources must be tangible, publicly accessible, and independently verifiable (circulated printed books, critical scholarly editions, or recognized public archives). Oral statements, personal communications requiring contacting an individual, and mutable or unarchived web pages are strictly inadmissible. Contemporary published works require prior discussion and consensus in [Corpus Discussions](https://github.com/mishkaah/corpus/discussions).
 4. **3-Zone Regulated AI Standard**:
    - Generative authoring or rewriting of religious texts is strictly forbidden. Assistive tools in Mishkaah Studio operate under closed-world invariants, mandatory PR disclosure, and human sign-off. See the [Regulated AI Governance Standard](./ai-governance.md).
 5. **Automated Verification Pipeline**:

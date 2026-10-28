@@ -8,6 +8,8 @@
 
 Mishkaah does not generate, synthesize, or paraphrase religious texts. No artificial intelligence or machine learning model is ever permitted to author, extrapolate, or alter any text in this corpus. Everything comes from trusted, accredited sources (critical printed editions and official scholarly portals), with documented publisher, editor (*Muhaqqiq*), publication year, volume, and page number or digital archive reference recorded in `corpus/SOURCES_MANIFEST.json`.
 
+Every registered source or cited proof must be tangible, publicly accessible, and independently verifiable — such as circulated printed books and critical scholarly editions (*Tahqiq*), or recognized public digital libraries and official institutional archives with permanent references. Personal attributions, oral statements requiring contacting an individual, and ephemeral or mutable web pages (which can be silently modified or deleted) are strictly inadmissible. Contemporary published works by identifiable scholars may be qualified only if they exist in an immutable, permanently archived, and referenceable form, following prior deliberation and scholarly consensus in [Corpus Discussions](https://github.com/mishkaah/corpus/discussions).
+
 Where assistive computational tools are used within **Mishkaah Studio** (such as read-only diacritic anomaly detection or closed-world entity linking), they operate under strict deterministic invariant filters (`stripInlineRefs(annotatedText) === originalText`), mandatory PR disclosure (`Gate C.2`), and required human collation before merge. For full details on our classification framework, see the [Regulated AI Governance Standard](./ai-governance.md).
 
 ---
