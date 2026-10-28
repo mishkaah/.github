@@ -1,8 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-  - name: "Contribution & Verification Guide (Read Before Opening Any Issue)"
-    url: "https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md"
-    about: "Please read our verification requirements, standards, and non-technical guide before opening an issue."
-  - name: "Corpus Scholarly & Source Discussions"
-    url: "https://github.com/mishkaah/corpus/discussions"
-    about: "Discuss candidate sources, edition variants, and scholarship topics in GitHub Discussions."
