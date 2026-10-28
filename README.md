@@ -7,6 +7,8 @@
 
 **English** · [العربية](https://github.com/mishkaah/.github/blob/main/README.ar.md)
 
+[Roadmap](https://github.com/orgs/mishkaah/projects/3/views/2) · [Text Verification & Protection](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.md) · [Contribution Guide](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md) · [Technical Overview](https://github.com/mishkaah/.github/blob/main/docs/technical-architecture.md) · [Brand Assets](https://github.com/mishkaah/brand)
+
 </div>
 
 **Mishkaah (مِشْكَاة)** is an open-source effort to gather the core Islamic materials a Muslim and student of knowledge needs — the Holy Quran, Tafseer, Hadith, daily Adhkar, classical primers (*Mutun*) and their explanations, biographies, and Arabic dictionaries — into one reliable collection and a simple, calm reading app for web and mobile.
@@ -18,7 +20,7 @@ We do not author or generate any religious content. We collect verified texts fr
 ### Where to go from here
 
 - **Roadmap**
-  Track active milestones and progress across our 6-month horizons on the [Live Public Roadmap Timeline](https://github.com/orgs/mishkaah/projects/3/views/2), or consult the full [Mishkaah Roadmap Specification](https://github.com/mishkaah/.github/blob/main/docs/roadmap.md).
+  Track active milestones and progress on the [Live Milestone Timeline](https://github.com/orgs/mishkaah/projects/3/views/2), or consult the full [Mishkaah Roadmap Specification](https://github.com/mishkaah/.github/blob/main/docs/roadmap.md).
 
 - **How we verify and protect the texts**
   Read [How We Check and Protect the Texts](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.md) to learn where our materials come from, how the text of the Holy Quran is sealed against any alteration, and how every change goes through automated checks and independent review before it is accepted.

@@ -6,6 +6,8 @@
 
 [English](https://github.com/mishkaah/.github/blob/main/profile/README.md) · **العربية**
 
+[خريطة الطريق](https://github.com/orgs/mishkaah/projects/3/views/2) · [تدقيق النصوص وحمايتها](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.ar.md) · [دليل المساهمة والتدقيق](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.ar.md) · [المعمارية التقنية](https://github.com/mishkaah/.github/blob/main/docs/technical-architecture.ar.md) · [أصول الهوية البصرية](https://github.com/mishkaah/brand)
+
 </div>
 
 **مِشْكَاة** مشروع مفتوح يهدف إلى جمع المواد والنصوص الإسلامية الأساسية التي يحتاجها المسلم وطالب العلم — من القرآن الكريم، والتفاسير، وكتب الحديث، والأذكار اليومية، والمتون العلمية وشروحها، وتراجم الأعلام، والمعاجم اللغوية — في مجموعة واحدة موثوقة، وتقديمها في تطبيق قراءة وبحث بسيط وهادئ للويب والهواتف.
@@ -17,7 +19,7 @@
 ### من أين تبدأ؟
 
 - **الخطة المنهجية**
-  تابع المراحل المنجزة والمجدولة زمنياً عبر [الخط الزمني العام لمشروع مشكاة](https://github.com/orgs/mishkaah/projects/3/views/2)، أو راجع وثيقة [خطة مشروع مشكاة](https://github.com/mishkaah/.github/blob/main/docs/roadmap.ar.md) التفصيلية.
+  تابع المراحل المنجزة والمجدولة زمنياً عبر [الخط الزمني لمراحل المشروع](https://github.com/orgs/mishkaah/projects/3/views/2)، أو راجع وثيقة [خطة مشروع مشكاة](https://github.com/mishkaah/.github/blob/main/docs/roadmap.ar.md) التفصيلية.
 
 - **كيف نتحقق من صحة النصوص ونحميها**
   اقرأ [كيف نراجع البيانات ونحمي النصوص](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.ar.md) للتعرف على كيفية اعتماد المصادر، وكيف يُحفظ نص القرآن الكريم من أي تغيير، وكيف يمر كل تعديل بفحص آلي ومراجعة مستقلة قبل اعتماده.
