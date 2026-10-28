@@ -6,7 +6,7 @@
 
 [English](https://github.com/mishkaah/.github/blob/main/README.md) · **العربية**
 
-[خريطة الطريق](https://github.com/orgs/mishkaah/projects/3/views/2) · [تدقيق النصوص وحمايتها](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.ar.md) · [دليل المساهمة والتدقيق](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.ar.md) · [المعمارية التقنية](https://github.com/mishkaah/.github/blob/main/docs/technical-architecture.ar.md) · [أصول الهوية البصرية](https://github.com/mishkaah/brand)
+[خريطة الطريق](https://github.com/orgs/mishkaah/projects/3/views/2) · [تدقيق النصوص وحمايتها](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.ar.md) · [دليل المساهمة والتدقيق](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.ar.md) · [حوكمة الذكاء الاصطناعي](https://github.com/mishkaah/.github/blob/main/docs/ai-governance.ar.md) · [المعمارية التقنية](https://github.com/mishkaah/.github/blob/main/docs/technical-architecture.ar.md) · [أصول الهوية البصرية](https://github.com/mishkaah/brand)
 
 </div>
 
@@ -28,6 +28,9 @@
   نرحب بالمقترحات الجادة وبالمساهمة في مراجعة نصوص المحتوى والعناية بها، ويُستحسن فيمن يشارك في المراجعة والتدقيق أن يكون ذا خلفية شرعية أو لغوية. ولأن جميع المواد تمر بمراحل تحقق متتابعة، فإن وجود أي خلل يظل أمراً نادراً.
   قبل فتح أي بلاغ أو تقديم مساهمة، يُرجى قراءة [دليل المساهمة والتدقيق](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.ar.md). يجب أن يكون كل بلاغ مدعوماً بدليل واضح وإحالة دقيقة إلى مصدر معتمد؛ أما البلاغات العشوائية أو غير الموثقة فتُغلق فوراً.
 
+- **حوكمة الذكاء الاصطناعي وضبط المعايير**
+  اقرأ [معايير حوكمة أدوات الذكاء الاصطناعي](https://github.com/mishkaah/.github/blob/main/docs/ai-governance.ar.md) للتعرف على حظر التوليد الآلي للنصوص وضوابط الأدوات المساعدة المنضبطة داخل استوديو مشكاة.
+
 - **الهوية البصرية والأصول الرسمية**
   اطّلع على مستودع [`mishkaah/brand`](https://github.com/mishkaah/brand) لتحميل الشعارات الرسمية وأيقونات التطبيقات المتكيفة ودليل الهوية البصرية.
 
@@ -42,6 +45,7 @@
 | :--- | :--- | :--- |
 | [`mishkaah/corpus`](https://github.com/mishkaah/corpus) | مجموعة النصوص الإسلامية (القرآن، التفاسير، الحديث، المتون، الأذكار، التراجم، المعاجم) والترجمات | خاص (قيد المراجعة) |
 | [`mishkaah/core`](https://github.com/mishkaah/core) | أدوات الفحص الداخلية وبناء قاعدة بيانات البحث | خاص (قيد المراجعة) |
+| [`mishkaah/studio`](https://github.com/mishkaah/studio) | بيئة التحقيق والمراجعة البصرية وأدوات الذكاء الاصطناعي المنضبطة للويب والهواتف | خاص (قيد المراجعة) |
 | [`mishkaah/app`](https://github.com/mishkaah/app) | تطبيقات القراءة للويب والهواتف | خاص (قيد التطوير) |
 | [`mishkaah/sdk`](https://github.com/mishkaah/sdk) | أدوات للمطورين للتعامل مع نصوص مشكاة وروابطها | خاص (قيد التطوير) |
 | [`mishkaah/brand`](https://github.com/mishkaah/brand) | الشعارات الرسمية وأيقونات التطبيقات المتكيفة وأصول الهوية البصرية | **عام (Public)** |

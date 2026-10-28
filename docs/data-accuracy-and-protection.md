@@ -6,7 +6,9 @@
 
 ### We collect and verify, never author
 
-Mishkaah does not generate or paraphrase religious texts. No machine learning models write or edit any text in this corpus. Everything comes from trusted, accredited sources (critical printed editions and official scholarly portals), with documented publisher, editor (*Muhaqqiq*), publication year, volume, and page number or digital archive reference recorded in `corpus/SOURCES_MANIFEST.json`.
+Mishkaah does not generate, synthesize, or paraphrase religious texts. No artificial intelligence or machine learning model is ever permitted to author, extrapolate, or alter any text in this corpus. Everything comes from trusted, accredited sources (critical printed editions and official scholarly portals), with documented publisher, editor (*Muhaqqiq*), publication year, volume, and page number or digital archive reference recorded in `corpus/SOURCES_MANIFEST.json`.
+
+Where assistive computational tools are used within **Mishkaah Studio** (such as read-only diacritic anomaly detection or closed-world entity linking), they operate under strict deterministic invariant filters (`stripInlineRefs(annotatedText) === originalText`), mandatory PR disclosure (`Gate C.2`), and required human collation before merge. For full details on our classification framework, see the [Regulated AI Governance Standard](./ai-governance.md).
 
 ---
 

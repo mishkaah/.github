@@ -6,10 +6,11 @@
 
 ### Architecture & Repositories
 
-Mishkaah divides its work across six focused repositories:
+Mishkaah divides its work across seven focused repositories:
 
 - **`mishkaah/corpus`**: Structured JSON files containing classical Arabic texts (Quran, Tafseer, Hadith, Matns, Adhkar, dictionaries, biographies) and foreign language translations.
-- **`mishkaah/core`**: Tooling repo containing TypeScript validation scripts, the SQLite search compiler, the visual studio GUI, and GitHub issue automation.
+- **`mishkaah/core`**: Tooling repo containing TypeScript validation scripts, the SQLite search compiler, and GitHub issue automation.
+- **`mishkaah/studio`**: Cloudflare Pages dark-mode-first responsive web workspace consuming `@mishkaah/sdk`, backed 100% by GitHub APIs with zero external database, plus regulated BYOK/org-fallback AI co-pilot.
 - **`mishkaah/app`**: Web and mobile reader applications with offline-first search.
 - **`mishkaah/sdk`**: TypeScript helper library (`@mishkaah/sdk`) for resolving URNs, parsing inline links, and navigating references.
 - **`mishkaah/brand`**: Vector logos, mobile app icons for iOS and Android, and design tokens.
@@ -56,7 +57,4 @@ bun test tools/meta_validator/verify_the_verifier.test.ts
 
 # Run the full 5-gate corpus verifier
 bun run tools/validators/verify_corpus.ts
-
-# Launch the visual studio GUI
-bun run studio
 ```

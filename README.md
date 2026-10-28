@@ -7,7 +7,7 @@
 
 **English** · [العربية](https://github.com/mishkaah/.github/blob/main/README.ar.md)
 
-[Roadmap](https://github.com/orgs/mishkaah/projects/3/views/2) · [Text Verification & Protection](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.md) · [Contribution Guide](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md) · [Technical Overview](https://github.com/mishkaah/.github/blob/main/docs/technical-architecture.md) · [Brand Assets](https://github.com/mishkaah/brand)
+[Roadmap](https://github.com/orgs/mishkaah/projects/3/views/2) · [Text Verification & Protection](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.md) · [Contribution Guide](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md) · [AI Governance](https://github.com/mishkaah/.github/blob/main/docs/ai-governance.md) · [Technical Overview](https://github.com/mishkaah/.github/blob/main/docs/technical-architecture.md) · [Brand Assets](https://github.com/mishkaah/brand)
 
 </div>
 
@@ -29,6 +29,9 @@ We do not author or generate any religious content. We collect verified texts fr
   We welcome thoughtful suggestions and help in maintaining the corpus, and having a background in Islamic studies or Arabic sciences is especially valuable for reviewing texts. Because all materials go through careful multi-stage verification, any remaining issue should be rare.
   Before opening any issue or contributing, please read the [Contribution & Verification Guide](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md). Every report must be backed by clear proof and an exact reference to a trusted source; random or unsubstantiated issues are closed immediately.
 
+- **Regulated AI governance**
+  Read the [Regulated AI Governance Standard](https://github.com/mishkaah/.github/blob/main/docs/ai-governance.md) to understand how we strictly prohibit generative text authoring while providing standardized, invariant-checked assistance within Mishkaah Studio.
+
 - **Brand & visual identity**
   Explore [`mishkaah/brand`](https://github.com/mishkaah/brand) for official logos, adaptive app icons, brand guidelines, and vector assets.
 
@@ -43,6 +46,7 @@ We do not author or generate any religious content. We collect verified texts fr
 | :--- | :--- | :--- |
 | [`mishkaah/corpus`](https://github.com/mishkaah/corpus) | The collection of Islamic texts (Quran, Tafseer, Hadith, primers, Adhkar, biographies, dictionaries) and translations | Private (in review) |
 | [`mishkaah/core`](https://github.com/mishkaah/core) | Internal verification tools and search database builder | Private (in review) |
+| [`mishkaah/studio`](https://github.com/mishkaah/studio) | Visual scholarly review, collation, and regulated AI web workspace for desktop and mobile | Private (in review) |
 | [`mishkaah/app`](https://github.com/mishkaah/app) | Web and mobile reading applications | Private (in development) |
 | [`mishkaah/sdk`](https://github.com/mishkaah/sdk) | Developer utilities for working with Mishkaah texts and references | Private (in development) |
 | [`mishkaah/brand`](https://github.com/mishkaah/brand) | Official logos, adaptive app icons, and brand identity assets | **Public** |
