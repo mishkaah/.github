@@ -1,57 +1,67 @@
-# How We Check and Protect the Texts
+# Data Accuracy, Source Trust & Text Protection
 
 **English** · [العربية](./data-accuracy-and-protection.ar.md)
 
----
-
-### We collect and verify, never author
-
-Mishkaah does not generate, synthesize, or paraphrase religious texts. No artificial intelligence or machine learning model is ever permitted to author, extrapolate, or alter any text in this corpus. Everything comes from trusted, accredited sources (critical printed editions and official scholarly portals), with documented publisher, editor (*Muhaqqiq*), publication year, volume, and page number or digital archive reference recorded in `corpus/SOURCES_MANIFEST.json`.
-
-Every registered source or cited proof must be tangible, publicly accessible, and independently verifiable — such as circulated printed books and critical scholarly editions (*Tahqiq*), or recognized public digital libraries and official institutional archives with permanent references. Personal attributions, oral statements requiring contacting an individual, and ephemeral or mutable web pages (which can be silently modified or deleted) are strictly inadmissible. Contemporary published works by identifiable scholars may be qualified only if they exist in an immutable, permanently archived, and referenceable form, following prior deliberation and scholarly consensus in [Corpus Discussions](https://github.com/mishkaah/corpus/discussions).
-
-Where assistive computational tools are used within **Mishkaah Studio** (such as read-only diacritic anomaly detection or closed-world entity linking), they operate under strict deterministic invariant filters (`stripInlineRefs(annotatedText) === originalText`), mandatory PR disclosure (`Gate C.2`), and required human collation before merge. For full details on our classification framework, see the [Regulated AI Governance Standard](./ai-governance.md).
+> [Organization Overview](../README.md) · [AI Safety Principles](./ai-governance.md) · [Brand Assets](https://github.com/mishkaah/brand)
 
 ---
 
-### Cryptographic seal on the Holy Quran
+## 1. Mission: Preservation, Never Authorship
 
-The Quran text follows the King Fahd Complex Uthmani Hafs recension (114 Surahs, 6,236 Ayahs, 77,429 Words).
-
-To ensure it can never be altered:
-- Every Surah is locked with two SHA-256 cryptographic hashes: one for the fully vocalized Uthmani text, and one for the unvocalized text.
-- If a single character, diacritic (*harakah*), or punctuation mark is modified, the build fails immediately.
-- The Quran directory only allows verified, locked editions.
+Mishkaah exists to preserve and present foundational Islamic texts with rigorous scholarly fidelity. We do not author, synthesize, or paraphrase religious content, and no automated model is permitted to alter or invent sacred wording, chains of transmission (*asanid*), or scholarly rulings.
 
 ---
 
-### Links never change the Arabic text
+## 2. Strict 5-Point Trusted Source Criteria
 
-When we tag historical figures, places, or terms inside a passage, we use Markdown links: `[Text](mishkah:domain:id)`.
+Every primary text, commentary, lexicon, or biographical entry must trace to a source that satisfies all five non-negotiable qualification criteria:
 
-We enforce a strict rule: stripping the link tags must reproduce the original Arabic text byte-for-byte:
-
-```ts
-stripInlineRefs(annotatedText) === originalText
-```
-
-If adding a link changes even one letter or space of the original text, the verification script rejects the change.
+1. **Tangible & Publicly Accessible Medium**: The work must exist as a circulated printed book or critical scholarly edition (*Tahqiq*), or in a recognized public institutional digital archive open to independent inspection. Oral attributions and private claims are inadmissible.
+2. **Complete Bibliographic Coordinates**: Every entry records the canonical title, author, critical editor (*Muhaqqiq*), publisher, publication year, and exact volume/page or stable archive reference.
+3. **Immutability & Permanence**: Sources must be physically fixed or permanently archived. Mutable blogs, social media posts, and unarchived web pages that can be silently edited or deleted are strictly rejected.
+4. **Scholarly Consensus & Accreditation**: New editions and contemporary works are admitted only after deliberate scholarly evaluation and consensus; flawed or misprinted editions are deprecated and replaced.
+5. **Traceable Provenance & Clear Standing**: Licensing or public-domain status and direct witness provenance are documented before any text unit enters verified production builds.
 
 ---
 
-### Automated checks on every change
+## 3. Universal Two-Person Human Review Rule
 
-Every contribution passes through automated checks before anyone can merge it:
-- **Valid JSON and UTF-8**: Ensures clean encoding with no hidden formatting characters.
-- **Strict schemas**: Every field must match predefined types; unexpected keys are rejected.
-- **Source verification**: Checks that every cited work exists in our approved sources catalog.
-- **Self-testing checker**: On every run, the checker tests itself against 28 intentional test errors (tampered verses, missing tashkeel, bad references) to confirm that the validator itself is active and functioning.
+Automated checks verify structure, invariants, and cryptographic seals, while scholarly accuracy is protected by human accountability:
+
+- **Adder + Mandatory Independent Human Reviewer**: Every new source qualification, text addition, or correction requires two distinct human participants — the **Adder** who prepares the change and a **Mandatory Independent Human Reviewer** who collates it against the accredited printed witness.
+- **Zero Solo or Automated Approvals**: No contributor may approve or merge their own submission, and no bot or AI system may act as a reviewer.
 
 ---
 
-### Mandatory second-person review
+## 4. 5-Layer External Trust & Digital Sanad Architecture
 
-Automated checks verify structure, links, and checksums, while scholarly review confirms every word against the approved source:
-- The person who prepares a change cannot approve or merge it (`Reviewer != Author`).
-- Any correction or revision must reference the approved source (critical printed edition, volume, and page, or accredited scholarly archive).
-- A second reviewer checks the change against the verified source before approving.
+To make textual authenticity verifiable by any scholar or reader outside Mishkaah, trust is structured across five transparent layers:
+
+### Layer 1: Direct Printed Page Witness + Archive Link
+Every record binds directly to its accredited printed edition (publisher, editor, volume, and page) and, where available, a stable public digital archive link so anyone can open the physical or archived page and compare word for word.
+
+### Layer 2: Honest 4-Tier Maturity Badges
+Every text and source carries an honest verification tier rather than masking unreviewed material as finished:
+
+| Tier | Meaning | Production Build Inclusion |
+| :--- | :--- | :--- |
+| **Tier 1 — Cryptographically Sealed** | Sacred Quranic text locked by immutable per-Surah SHA-256 digests | **Included** |
+| **Tier 2 — Dual-Verified Edition** | Source and text collated and approved under the Two-Person Human Review Rule | **Included** |
+| **Tier 3 — Under Scholarly Review** | Seeded or undergoing active collation; awaiting independent human sign-off | **Excluded** |
+| **Tier 4 — Quarantined / Untrusted** | Unverified, disputed, or flagged for source replacement | **Strictly Excluded** |
+
+Quarantined and untrusted data is **never** shipped in production builds.
+
+### Layer 3: Immutable Two-Person Audit Trail
+Every accepted change preserves permanent attribution for both the Adder and the Independent Human Reviewer in version history, ensuring clear chain-of-custody (*Sanad*) accountability from printed edition to published release.
+
+### Layer 4: Cryptographic SHA-256 Ratchet Seals & Open Verifier
+- **Holy Quran Protection**: The Quran follows the King Fahd Complex Uthmani Hafs recension (114 Surahs, 6,236 Ayahs, 77,429 Words). Each Surah is sealed with dual SHA-256 checksums (fully vocalized Uthmani text and unvocalized text). Altering a single letter or diacritic (*harakah*) fails verification immediately.
+- **Non-Destructive Cross-Linking**: Inline entity links never alter underlying Arabic letters or diacritics:
+  ```text
+  stripInlineRefs(annotatedText) === originalText
+  ```
+- **Monotonic Ratchet Seals & Open Verifier**: Verified records are sealed with cryptographic SHA-256 ratchet digests audited by an open, reproducible verifier that includes built-in tamper-detection checks.
+
+### Layer 5: Public Printed-Proof Errata Process
+Any scholar or reader who spots a discrepancy may submit an erratum backed by direct printed-edition proof (title, editor, publisher, volume, and page, or permanent institutional archive witness). Claims lacking verifiable printed proof are closed without modifying the text, and valid errata proceed through the Universal Two-Person Human Review Rule.
