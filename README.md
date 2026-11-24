@@ -5,51 +5,36 @@
 ### ***Preserved Text. Trusted Knowledge.***
 *(نَصٌّ مَصُون.. وَعِلْمٌ مَأْمُون)*
 
-**English** · [العربية](https://github.com/mishkaah/.github/blob/main/README.ar.md)
+**English** · [العربية](./README.ar.md)
 
-[Roadmap](https://github.com/orgs/mishkaah/projects/3/views/2) · [Text Verification & Protection](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.md) · [Contribution Guide](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md) · [AI Governance](https://github.com/mishkaah/.github/blob/main/docs/ai-governance.md) · [Technical Overview](https://github.com/mishkaah/.github/blob/main/docs/technical-architecture.md) · [Brand Assets](https://github.com/mishkaah/brand)
+[Data Accuracy & Protection](./docs/data-accuracy-and-protection.md) · [AI Safety Principles](./docs/ai-governance.md) · [Brand Assets](https://github.com/mishkaah/brand)
 
 </div>
 
-**Mishkaah (مِشْكَاة)** is an open-source effort to gather the core Islamic materials a Muslim and student of knowledge needs — the Holy Quran, Tafseer, Hadith, daily Adhkar, classical primers (*Mutun*) and their explanations, biographies, and Arabic dictionaries — into one reliable collection and a simple, calm reading app for web and mobile.
+**Mishkaah** is an open-source initiative dedicated to preserving foundational Islamic texts — the Holy Quran, classical Tafseer, canonical Hadith collections, daily Adhkar, classical primers (*Mutun*) and commentaries, historical biographies, and Arabic dictionaries — in a verified digital collection and a calm reading experience.
 
-We do not author or generate any religious content. We collect verified texts from trusted, accredited sources, format them carefully, connect related passages and biographies together, and make them freely available to everyone.
-
----
-
-### Where to go from here
-
-- **Roadmap**
-  Track active milestones and progress on the [Live Milestone Timeline](https://github.com/orgs/mishkaah/projects/3/views/2), or consult the full [Mishkaah Roadmap Specification](https://github.com/mishkaah/.github/blob/main/docs/roadmap.md).
-
-- **How we verify and protect the texts**
-  Read [How We Check and Protect the Texts](https://github.com/mishkaah/.github/blob/main/docs/data-accuracy-and-protection.md) to learn where our materials come from, how the text of the Holy Quran is sealed against any alteration, and how every change goes through automated checks and independent review before it is accepted.
-
-- **Helping maintain and review the corpus**
-  We welcome thoughtful suggestions and help in maintaining the corpus, and having a background in Islamic studies or Arabic sciences is especially valuable for reviewing texts. Because all materials go through careful multi-stage verification, any remaining issue should be rare.
-  Before opening any issue or contributing, please read the [Contribution & Verification Guide](https://github.com/mishkaah/.github/blob/main/docs/non-technical-contributing.md). Every report must be backed by clear proof and an exact reference to a trusted source; random or unsubstantiated issues are closed immediately.
-
-- **Regulated AI governance**
-  Read the [Regulated AI Governance Standard](https://github.com/mishkaah/.github/blob/main/docs/ai-governance.md) to understand how we strictly prohibit generative text authoring while providing standardized, invariant-checked assistance within Mishkaah Studio.
-
-- **Brand & visual identity**
-  Explore [`mishkaah/brand`](https://github.com/mishkaah/brand) for official logos, adaptive app icons, brand guidelines, and vector assets.
-
-- **For developers**
-  Read the [Technical Overview](https://github.com/mishkaah/.github/blob/main/docs/technical-architecture.md) for details on the repository structure, data format, and verification tools.
+We **collect and verify** heritage texts from accredited sources; we never author, invent, or generate religious content.
 
 ---
 
-### Repositories
+### Public Standards & Trust Architecture
 
-| Repository | Purpose | Status |
+- **[Data Accuracy & Protection](./docs/data-accuracy-and-protection.md)**
+  Covers the **Strict 5-Point Trusted Source Criteria**, the **Universal Two-Person Human Review Rule** (Adder + Mandatory Independent Human Reviewer), and the **5-Layer External Trust & Digital Sanad Architecture** (Direct Printed Page Witness + Archive Link, Honest 4-Tier Maturity Badges excluding quarantined/untrusted data from production builds, Immutable Two-Person Audit Trail, Cryptographic SHA-256 Ratchet Seals & Open Verifier, and Public Printed-Proof Errata Process).
+
+- **[Public AI Safety Principles](./docs/ai-governance.md)**
+  Explains our absolute prohibition on generative authoring of sacred texts, closed-world deterministic filters, and mandatory human review against physical printed witnesses.
+
+- **[Brand Assets](https://github.com/mishkaah/brand)**
+  Official vector marks, adaptive app icons, and visual identity guidelines.
+
+---
+
+### Public Repositories
+
+| Repository | Purpose | Visibility |
 | :--- | :--- | :--- |
-| [`mishkaah/corpus`](https://github.com/mishkaah/corpus) | The collection of Islamic texts (Quran, Tafseer, Hadith, primers, Adhkar, biographies, dictionaries) and translations | Private (in review) |
-| [`mishkaah/core`](https://github.com/mishkaah/core) | Internal verification tools and search database builder | Private (in review) |
-| [`mishkaah/studio`](https://github.com/mishkaah/studio) | Visual scholarly review, collation, and regulated AI web workspace for desktop and mobile | Private (in review) |
-| [`mishkaah/app`](https://github.com/mishkaah/app) | Web and mobile reading applications | Private (in development) |
-| [`mishkaah/sdk`](https://github.com/mishkaah/sdk) | Developer utilities for working with Mishkaah texts and references | Private (in development) |
-| [`mishkaah/brand`](https://github.com/mishkaah/brand) | Official logos, adaptive app icons, and brand identity assets | **Public** |
-| [`mishkaah/.github`](https://github.com/mishkaah/.github) | Public overview, guides, and corpus contribution rules | **Public** |
+| [`mishkaah/.github`](https://github.com/mishkaah/.github) | Public mission, trust architecture, verification standards, and AI safety principles | **Public** |
+| [`mishkaah/brand`](https://github.com/mishkaah/brand) | Official logos, adaptive app icons, and visual identity assets | **Public** |
 
-> We are completing our initial verification before opening `corpus` and `core` publicly. In the meantime, all guides and documentation in [`mishkaah/.github`](https://github.com/mishkaah/.github) are open, and invited reviewers can access [`mishkaah/corpus`](https://github.com/mishkaah/corpus).
+> Corpus verification, editorial tooling, and reading applications are undergoing private scholarly verification ahead of public release.
